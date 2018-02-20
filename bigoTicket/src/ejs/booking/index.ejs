@@ -1,0 +1,232 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/booking/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+
+    <% include ../parts/head/_commonCss.ejs %>
+    <% include ../parts/head/_headScript.ejs %>
+
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">빅오쇼예약시스템</h1>
+    <div id="wrap" class="wrap">
+        <% include ../parts/_header.ejs %>
+
+        <div class="main containerF">
+
+            <nav class="pathNav container">
+                <ul class="cf">
+                    <li><a href="/views/">홈</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li class="on"><a href="/views/booking/index_02.html">공연일정</a></li>
+                </ul>
+            </nav>
+            <section class="schedule-sec container cm-s">
+
+                <h2 class="ls-1">공연일정</h2>
+                <p class="p-1 ls-1">
+                    ※ 공연기간 - 2017.03.31(금) ~ 2017.11.25(토)<br>
+                    ※ 온라인예매 - 공연 일로부터 2주전 00시 ~공연 당일 오후 3시<br>
+                    ※ 현장티켓구매 - 공연 당일 오후 5시부터 구매 가능
+                </p>
+
+                <div class="calPagenation">
+                    <a href="javascript:;" class="prev">◀</a>
+                    <span class="date">2018.03</span>
+                    <a href="javascript:;" class="next">▶</a>
+                    <a href="javascript:;" class="today">오늘</a>
+                </div>
+                <table class="calTb">
+                    <colgroup>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                        <col>
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th class="sun">일</th>
+                            <th>월</th>
+                            <th>화</th>
+                            <th>수</th>
+                            <th>목</th>
+                            <th>금</th>
+                            <th class="sat">토</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td class="sun"></td>
+                            <td class="mon"></td>
+                            <td></td>
+                            <td></td>
+                            <td class="passby">
+                                <span class="day">1</span>
+                                <div class="d-1">
+                                    Big-O<br>
+                                    [예약마감]
+                                </div>
+                            </td>
+                            <td class="passby">
+                                <span class="day">2</span>
+                                <div class="d-1">
+                                    Big-O<br>
+                                    [예약마감]
+                                </div>
+                            </td>
+                            <td class="sat passby">
+                                <span class="day">3</span>
+                                <div class="d-1">
+                                    Big-O<br>
+                                    [예약마감]
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                            <!-- 일요일: sun, 월요일: mon, 마감: passby, 클릭시: on 클래스 -->
+                            <td class="sun">
+                                <span class="day">4</span>
+                            </td>
+                            <td class="mon">
+                                <span class="day">5</span>
+                                <div class="d-1">공연 휴장일</div>
+                            </td>
+                            <td class="passby">
+                                <span class="day">6</span>
+                                <div class="d-1">
+                                    Big-O<br>
+                                    [예약마감]
+                                </div>
+                            </td>
+                            <td class="passby">
+                                <span class="day">7</span>
+                                <div class="d-1">
+                                    Big-O<br>
+                                    [예약마감]
+                                </div>
+                            </td>
+                            <td class="on">
+                                <span class="day">8</span>
+                                <div class="d-1">
+                                    <span class="s-1">P석ㅣ잔여 223</span>
+                                    <span class="s-2">S석ㅣ잔여 343</span>
+                                </div>
+                            </td>
+                            <td>
+                                <span class="day">9</span>
+                                <div class="d-1">
+                                    <span class="s-1">P석ㅣ잔여 223</span>
+                                    <span class="s-2">S석ㅣ잔여 343</span>
+                                </div>
+                            </td>
+                            <td class="sat">
+                                <span class="day">10</span>
+                                <div class="d-1">
+                                    <!-- 좌석 마감 cl-1클래스 -->
+                                    <span class="s-1 cl-1">P석ㅣ좌석마감</span>
+                                    <span class="s-2">S석ㅣ잔여 343</span>
+                                </div>
+                            </td>
+                        </tr>
+                        <tr>
+                        <% for (var i=11; i <= 17; i ++) { %>
+                            <% if (i == 11) { %>
+                                <td class="sun">
+                                    <span class="day"><%=i %></span>
+                                    <div class="d-1">
+                                        <span class="s-1">P석ㅣ잔여 223</span>
+                                        <span class="s-2">S석ㅣ잔여 343</span>
+                                    </div>
+                                </td>
+                            <% } else if (i == 17) { %>
+                                <td class="sat">
+                                    <span class="day"><%=i %></span>
+                                    <div class="d-1">
+                                        <span class="s-1">P석ㅣ잔여 223</span>
+                                        <span class="s-2">S석ㅣ잔여 343</span>
+                                    </div>
+                                </td>
+                            <% } else { %>
+                                <td>
+                                    <span class="day"><%=i %></span>
+                                    <div class="d-1">
+                                        <span class="s-1">P석ㅣ잔여 223</span>
+                                        <span class="s-2">S석ㅣ잔여 343</span>
+                                    </div>
+                                </td>
+                            <% } %>
+                        <% } %>
+                        <tr>
+                        <tr>
+                        <% for (var i=18; i <= 24; i ++) { %>
+                            <% if (i == 18) { %>
+                                <td class="sun">
+                                    <span class="day"><%=i %></span>
+                                    <div class="d-1">
+                                        <span class="s-1">P석ㅣ잔여 223</span>
+                                        <span class="s-2">S석ㅣ잔여 343</span>
+                                    </div>
+                                </td>
+                            <% } else if (i == 24) { %>
+                                <td class="sat">
+                                    <span class="day"><%=i %></span>
+                                    <div class="d-1">
+                                        <span class="s-1">P석ㅣ잔여 223</span>
+                                        <span class="s-2">S석ㅣ잔여 343</span>
+                                    </div>
+                                </td>
+                            <% } else { %>
+                                <td>
+                                    <span class="day"><%=i %></span>
+                                    <div class="d-1">
+                                        <span class="s-1">P석ㅣ잔여 223</span>
+                                        <span class="s-2">S석ㅣ잔여 343</span>
+                                    </div>
+                                </td>
+                            <% } %>
+                        <% } %>
+                        <tr>
+                        <tr>
+                        <% for (var i=25; i <= 31; i ++) { %>
+                            <% if (i == 25) { %>
+                                <td class="sun">
+                                    <span class="day"><%=i %></span>
+                                    <div class="d-1">
+                                        <span class="s-1">P석ㅣ잔여 223</span>
+                                        <span class="s-2">S석ㅣ잔여 343</span>
+                                    </div>
+                                </td>
+                            <% } else if (i == 31) { %>
+                                <td class="sat">
+                                    <span class="day"><%=i %></span>
+                                    <div class="d-1">
+                                        <span class="s-1">P석ㅣ잔여 223</span>
+                                        <span class="s-2">S석ㅣ잔여 343</span>
+                                    </div>
+                                </td>
+                            <% } else { %>
+                                <td>
+                                    <span class="day"><%=i %></span>
+                                    <div class="d-1">
+                                        <span class="s-1">P석ㅣ잔여 223</span>
+                                        <span class="s-2">S석ㅣ잔여 343</span>
+                                    </div>
+                                </td>
+                            <% } %>
+                        <% } %>
+                        <tr>
+                    </tbody>
+                </table>
+			</section>
+
+		</div>
+
+        <% include ../parts/_footer.ejs %>
+    </div>
+
+</body>
+</html>

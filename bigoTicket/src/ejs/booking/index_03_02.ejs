@@ -1,0 +1,233 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/booking/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+
+    <% include ../parts/head/_commonCss.ejs %>
+    <% include ../parts/head/_headScript.ejs %>
+
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">빅오쇼예약시스템</h1>
+    <div id="wrap" class="wrap">
+        <% include ../parts/_header.ejs %>
+
+        <div class="main containerF">
+
+            <nav class="pathNav container">
+                <ul class="cf">
+                    <li><a href="/views/">홈</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li><a href="/views/booking/index_02.html">공연일정</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li><a href="/views/booking/index_02.html">구역 선택</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li class="on"><a href="/views/booking/index_03.html">인원 및 좌석선택</a></li>
+                </ul>
+            </nav>
+            <section class="seat-sec container cm-s">
+
+                <h2 class="ls-1">인원 및 좌석선택</h2>
+                <p class="p-1 ls-1">
+                    관람을 원하시는 인원 및 좌석을 선택해 주세요
+                </p>
+
+                <div class="sltNum">
+                    <span class="s-lbl">성인</span>
+                    <select name="" id="" class="reset">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                    </select>
+                    <span class="s-lbl">중고생/경로</span>
+                    <select name="" id="" class="reset">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                    </select>
+                    <span class="s-lbl">어린이</span>
+                    <select name="" id="" class="reset">
+                        <option value="">0</option>
+                        <option value="">1</option>
+                        <option value="">2</option>
+                        <option value="">3</option>
+                        <option value="">4</option>
+                        <option value="">5</option>
+                        <option value="">6</option>
+                        <option value="">7</option>
+                        <option value="">8</option>
+                    </select>
+                </div>
+                <div class="seatLayout type-a">
+                    <div class="h3-1">
+                        <span class="s-green"></span><span class="f-bd">A구역(S석) 좌석 배치도</span>
+                        <p>관람을 원하시는 좌석을 선택해 주세요</p>
+                    </div>
+
+                    <!-- A구역 예시 -->
+                    <div class="seatArea" id="seatArea">
+                        <!-- 스노우좀: snow, 선택가능 좌석: possible, 선택한 좌석: on, 예약블가능: impossible 클래스 -->
+                        <ul class="seatList cf">
+                        <% for (var i=1; i <= 37; i ++) { %>
+                            <% if (i <= 16) { %>
+                                <li class="non">
+                                    7열<br>
+                                    <%=i %>
+                                </li>
+                            <% } else if (i >= 22 && i <= 23) { %>
+                                <li class="non">
+                                    7열<br>
+                                    <%=i %>
+                                </li>
+                            <% } else { %>
+                                <li class="possible f-sm">
+                                    7열<br>
+                                    <%=i %>
+                                </li>
+                            <% } %>
+                        <% } %>
+                        </ul>
+                        <ul class="seatList cf">
+                        <% for (var i=1; i <= 37; i ++) { %>
+                            <% if (i >= 22 && i <= 23) { %>
+                                <li class="non">
+                                    6열<br>
+                                    <%=i %>
+                                </li>
+                            <% } else { %>
+                                <li class="possible f-sm">
+                                    6열<br>
+                                    <%=i %>
+                                </li>
+                            <% } %>
+                        <% } %>
+                        </ul>
+                        <ul class="seatList cf">
+                        <% for (var i=1; i <= 37; i ++) { %>
+                            <li class="possible f-sm">
+                                5열<br>
+                                <%=i %>
+                            </li>
+                        <% } %>
+                        </ul>
+                        <ul class="seatList cf">
+                        <% for (var i=1; i <= 37; i ++) { %>
+                            <% if (i >= 17 && i <= 22) { %>
+                                <li class="snow on">
+                                    4열<br>
+                                    <%=i %>
+                                </li>
+                            <% } else { %>
+                                <li class="snow f-sm">
+                                    4열<br>
+                                    <%=i %>
+                                </li>
+                            <% } %>
+                        <% } %>
+                        </ul>
+                        <ul class="seatList cf">
+                        <% for (var i=1; i <= 37; i ++) { %>
+                            <% if (i <= 14) { %>
+                                <li class="impossible f-sm">
+                                    3열<br>
+                                    <%=i %>
+                                </li>
+                            <% } else { %>
+                                <li class="snow f-sm">
+                                    3열<br>
+                                    <%=i %>
+                                </li>
+                            <% } %>
+                        <% } %>
+                        </ul>
+                        <ul class="seatList cf">
+                        <% for (var i=1; i <= 37; i ++) { %>
+                            <li class="snow f-sm">
+                                2열<br>
+                                <%=i %>
+                            </li>
+                        <% } %>
+                        </ul>
+                        <ul class="seatList cf">
+                        <% for (var i=1; i <= 37; i ++) { %>
+                            <% if (i <= 7) { %>
+                                <li class="non">
+                                    1열<br>
+                                    <%=i %>
+                                </li>
+                            <% } else { %>
+                                <li class="snow f-sm">
+                                    1열<br>
+                                    <%=i %>
+                                </li>
+                            <% } %>
+                        <% } %>
+                        </ul>
+                    </div>
+
+                    <div class="stage">무대</div>
+                    <div class="category">
+                        <span class="s-snow"></span> 스노우 존
+                        <span class="s-possible"></span> 선택가능 좌석
+                        <span class="s-on"></span> 선택한 좌석
+                        <span class="s-impossible"></span> 예약 불가능
+                    </div>
+
+                </div>
+
+			</section>
+
+            <section class="sltComplete-sec containerF">
+                <div class="sltCompleteArea container">
+                    <ul class="ul-1 cf">
+                        <li class="nth-1">
+
+                        </li>
+                        <li class="nth-2">
+                            <p><span class="s-lbl">선택구역</span><span class="f-bd">A구역</span></p>
+                            <p><span class="s-lbl">일시</span><span class="f-bd">2018년 3월 8일(목)</span></p>
+                            <p><span class="s-lbl">인원</span><span class="f-bd">총 6명</span></p>
+                        </li>
+                        <li class="nth-3">
+                            <p><span class="s-lbl">선택좌석</span><span class="f-bd">S석</span></p>
+                            <p><span class="s-lbl">좌석번호</span><span class="f-bd">4열 17번, 4열 18, 4열 19열, 4열 20, 4열 21, 4열 22</span></p>
+                        </li>
+                        <li class="nth-4">
+                            <p><span class="s-lbl">요금</span></p>
+                            <p>
+                                <span class="f-bd">
+                                    성인  2명     36,000원<br>
+                                    중고생/경로  3명    24,000원<br>
+                                    어린이 1명    14,000원
+                                </span>
+                            </p>
+                        </li>
+                        <li class="nth-5">
+                            <p><span class="s-lbl">총 결제 금액</span></p>
+                            <p><span class="s-prc">86,000원</span></p>
+                            <p><a href="" class="a-btn">좌석 선택 완료 <span class="ic-rArrow"></span></a></p>
+                        </li>
+                    </ul>
+                </div>
+            </section>
+
+		</div>
+
+        <% include ../parts/_footer.ejs %>
+    </div>
+
+</body>
+</html>

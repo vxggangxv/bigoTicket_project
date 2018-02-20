@@ -1,0 +1,24 @@
+@charset "utf-8";
+
+.container {width: 1200px;}
+.visual-sec {width: 100%; height: 391px; background: #eaeaea url(/img/visual_01.jpg) no-repeat; background-size: cover; text-align: center; color: #fff;}
+.visual-sec .inArea {position: relative; top: 115px;}
+.visual-sec .txtArea {}
+.visual-sec .txtArea p {font-size: 18px;}
+.visual-sec .txtArea h2 {font-size: 50px; font-weight: 700; margin-top: 4px;}
+.visual-sec .btnArea {margin-top: 20px;}
+.visual-sec .btnArea a {display: inline-block; padding: 4px 20px 5px;; border: 1px solid #fff;}
+
+.link-sec {}
+.link-sec h2 {font-size: 26px; font-weight: 700; padding: 50px 0 60px;}
+.link-sec h2:before {content: ""; display: inline-block; width: 70px; height: 1px; background: #333; vertical-align: middle; margin-right: 15px;}
+.link-sec .linkList {margin-bottom: 110px;}
+.link-sec .linkList > li {float: left;}
+.link-sec .linkList > li > div {float: left;}
+.link-sec .linkList > li > div.d-2 {margin-left: 20px; width: 280px;}
+.link-sec .linkList > li.nth-2 > div.d-2 {width: 305px;}
+.link-sec .linkList > li.nth-3 > div.d-2 {width: 210px;}
+.link-sec .linkList > li > div.d-2 h3 {font-size: 24px; font-weight: 700; letter-spacing: -1px;}
+.link-sec .linkList > li > div.d-2 p {color: #777; margin-top: 2px; letter-spacing: -1px;}
+.link-sec .linkList > li > div.d-2 a {display: inline-block; border: 1px solid #1f80b3; border-right-width: 4px; padding: 2px 14px 3px; margin-top: 8px;}
+.link-sec .linkList > li > div.d-2 a img {position: relative; top: -1px; left: 5px;}

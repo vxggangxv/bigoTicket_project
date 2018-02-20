@@ -1,0 +1,87 @@
+@charset "utf-8";
+body {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dotum', sans-serif; line-height:1.5; letter-spacing:-0.5px;}
+body, a {color: #333;}
+a {text-decoration:none; color: inherit;}
+input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dotum', sans-serif; color:#333;}
+
+/* bxslider초기화 */
+.bx-wrapper {position: relative; margin: 0 auto; border: none; width: 1000px; box-shadow: none;}
+.bx-wrapper .bx-loading {background: none;}
+.bx-wrapper .bx-viewport {border: none; box-shadow: none; left: 0; background: none;}
+.bx-wrapper .bx-controls-auto, .bx-wrapper .bx-pager {display: none;}
+.bx-wrapper .bx-controls-direction {display: none;}
+.bx-wrapper .bx-controls-direction a {background: none;}
+
+/* 초기화 */
+select.reset, input[type=text].reset {
+	-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; outline: none;
+}
+select.reset {width: 70px; height: 32px; border: 1px solid #b6b6b6; background: #fff url(/img/common/selectArr.png) no-repeat 85% center; padding-left: 10px; padding-bottom: 5px; box-sizing: border-box;}
+
+/* 테마컬러 */
+.thColor1 {color: #1f80b3;}
+.bgColor1 {background: #1f80b3;}
+
+/* 공통 css */
+.ta-center {text-align: center;}
+.bsLs, .bsLs * {box-sizing: border-box; letter-spacing: -0.5px;}
+.mgl, .mg- {display: inline-block; vertical-align: middle; position: relative;}
+.ftfm-nt, .ftfm-nt * {font-family: "Noto Sans KR", "Malgun Gothic", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif;}
+.ftfm-mg, .ftfm-mg * {font-family: "Malgun Gothic", "Noto Sans KR", "Apple SD Gothic Neo", "Nanum Gothic", sans-serif; letter-spacing: -1px;}
+.f-bd {font-weight: 700;}
+.f-bdr {font-weight: 800;}
+.fz-15 {font-size: 15px;}
+.ls-1 {letter-spacing: -1px;}
+.s-i-Arr {position: relative; display: inline-block; width: 6px; height: 6px; border: 1px solid #d7d7d7;
+	-webkit-transform: rotate(-45deg);
+	-ms-transform: rotate(-45deg);
+	-o-transform: rotate(-45deg);
+	transform: rotate(-45deg);}
+.s-i-Arr.rArr {
+	border-top: 0; border-left: 0; top: -3px;
+}
+
+/* 전체 wrap */
+.wrap {position: relative; width: 100%;}
+
+/* 공통 콘텐츠 태그 클래스 */
+.container, .containerF {position: relative; margin: 0 auto;}
+.container {width: 1100px;}
+.containerF {width: 100%;}
+.container:before, .container:after
+, .containerF:before, .containerF:after{content: ""; display: block;}
+.container:after, .containerF:after {clear: both;}
+
+.main > section[class*='-sec'] {position: relative;}
+
+.header {background: url(/img/common/headerBorder.jpg) repeat-x center top; height: 110px; border-bottom: 1px solid #d0d0d0;}
+.hd-area {padding: 10px 0 20px; box-sizing: border-box;}
+.hd-area .a-logo {position: absolute; left: 0; top: 14px; z-index: 1;}
+.hd-area .g-nav {position: relative;}
+.hd-area .g-nav .gnb {position: relative; top: 32px; text-align: right;}
+.hd-area .g-nav .gnb > li {display: inline-block; margin-left: 50px;}
+.hd-area .g-nav .gnb > li:first-child {margin-left: 0;}
+.hd-area .g-nav .gnb > li > a {font-size: 20px;}
+
+.footer {background: #ddd; padding: 45px 0 30px; margin-top: 100px;}
+.ft-area {width: 1200px; color: #777; font-size: 15px;}
+.ft-area > div {float: left; letter-spacing: -1px;}
+.ft-area .d-1 {font-size: 16px; width: 450px;}
+.ft-area .d-2 {width: 750px;}
+.ft-area .d-1 .s-1 {color: #5a5a5a; font-size: 17px;}
+.ft-area .d-1 .s-2 {letter-spacing: -1.5px;}
+.ft-area .d-1 strong {letter-spacing: -2px;}
+.ft-area .d-1 strong {display: block; font-size: 48px; color: #444; font-weight: 700; line-height: 1.2; margin-bottom: 8px;}
+.ft-area address {color: #8c8989; font-size: 15px;}
+.ft-area address:first-child {margin-bottom: 20px;}
+.ft-area address .f-bd {color: #444; margin-right: 8px; letter-spacing: -0.5px;}
+.ft-area address small {display: block;}
+
+.pathNav {position: relative; margin-top: 10px;}
+.pathNav > ul {text-align: right;}
+.pathNav > ul > li {display: inline-block; margin-right: 5px;}
+.pathNav > ul > li:first-child {margin-right: 0;}
+.pathNav > ul > li > a {font-size: 14px;}
+.pathNav > ul > li.on > a {color: #125195;}
+.pathNav > ul > li .rArrow {position: relative; display: inline-block; top: 1px; width: 6px; margin-left: 3px;}
+.pathNav > ul > li .rArrow:after {width: 6px; height: 6px;}
