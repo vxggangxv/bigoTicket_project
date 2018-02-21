@@ -1,4 +1,5 @@
 @charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
 
 .footer {margin-top: 150px;}
 
@@ -6,6 +7,7 @@
 .main > section[class*='-sec'].cm-s > h2 {font-size: 30px; font-weight: 700; margin-bottom: 8px;}
 .main > section[class*='-sec'].cm-s > .p-1 {font-size: 17px;}
 .cl-blue {color: #125195;}
+.bg-blue {color: #125195;}
 .fz-17 {font-size: 17px;}
 .bor-b6 {border: 1px solid #b6b6b6;}
 
@@ -80,27 +82,95 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f2f0f3',GradientType=0 ); /* IE6-9 */
 }
 .seat-sec .seatLayout .h3-1 .a-btn.reset:before {position: relative; top: -1px; margin-right: 4px; content: ""; display: inline-block; vertical-align: middle; width: 16px; height: 16px; background: url(/img/common/btnReset.png);}
-.seat-sec .seatArea {margin-top: 20px;}
-.seat-sec .seatArea .seatList {font-size: 0; text-align: center; margin-top: 5px;}
-.seat-sec .seatArea .seatList > li {display: inline-block; width: 25px; height: 36px; box-sizing: border-box; border: 1px solid #c8c8c8; cursor: pointer; text-align: center; font-size: 11px; font-weight: 700; border-radius: 3px; padding: 2px 1.5px; margin-left: 3px; line-height: 1.4; font-family: "Dotum", sans-serif;}
-.seat-sec .seatArea .seatList > li:first-child {margin-left: 0;}
-.seat-sec .seatArea .seatList > li.non {visibility: hidden;}
-.seat-sec .seatArea .seatList > li.snow,
-.seat-sec .category .s-snow {background: #e7f3ff;}
-.seat-sec .seatArea .seatList > li.possible,
-.seat-sec .category .s-possible {background: #ffffd9;}
-.seat-sec .seatArea .seatList > li.impossible,
-.seat-sec .category .s-impossible {background: #e9e9e9;}
-.seat-sec .seatArea .seatList > li.impossible {font-weight: 400; color: #727272;}
-.seat-sec .seatArea .seatList > li.f-sm {font-weight: 400;}
-.seat-sec .seatArea .seatList > li.on,
-.seat-sec .category .s-on {background: #125195;}
-.seat-sec .seatArea .seatList > li.on {color: #fff;}
-.seat-sec .stage {width: 1030px; height: 25px; margin: 25px auto; background: url(/img/booking/stageBg.jpg) repeat-x; text-align: center;}
+.seat-sec .seatLayout .seatArea {margin-top: 20px;}
+.seat-sec .seatLayout .seatArea .seatList {font-size: 0; text-align: center; margin-top: 5px;}
+.seat-sec .seatLayout .seatArea .seatList > li {display: inline-block; width: 25px; height: 36px; box-sizing: border-box; border: 1px solid #c8c8c8; cursor: pointer; text-align: center; font-size: 11px; font-weight: 700; border-radius: 3px; padding: 2px 1.5px; margin-left: 3px; line-height: 1.4; font-family: "Dotum", sans-serif;}
+.seat-sec .seatLayout .seatArea .seatList > li:first-child {margin-left: 0;}
+.seat-sec .seatLayout .seatArea .seatList > li.non {visibility: hidden;}
+.seat-sec .seatLayout .seatArea .seatList > li.snow,
+.seat-sec .seatLayout .category .s-snow {background: #e7f3ff;}
+.seat-sec .seatLayout .seatArea .seatList > li.possible,
+.seat-sec .seatLayout .category .s-possible {background: #ffffd9;}
+.seat-sec .seatLayout .seatArea .seatList > li.impossible,
+.seat-sec .seatLayout .category .s-impossible {background: #e9e9e9;}
+.seat-sec .seatLayout .seatArea .seatList > li.impossible {font-weight: 400; color: #727272;}
+.seat-sec .seatLayout .seatArea .seatList > li.f-sm {font-weight: 400;}
+.seat-sec .seatLayout .seatArea .seatList > li.on,
+.seat-sec .seatLayout .category .s-on {background: #125195;}
+.seat-sec .seatLayout .seatArea .seatList > li.on {color: #fff;}
+.seat-sec .seatLayout .stage {width: 1030px; height: 25px; margin: 25px auto; background: url(/img/booking/stageBg.jpg) repeat-x; text-align: center;}
 .seat-sec .seatLayout .category {text-align: right; color: #232323; font-size: 14px; padding-right: 24px;}
 .seat-sec .seatLayout .category > span {position: relative; display: inline-block; width: 18px; height: 18px; border: 1px solid #bbbbbb; vertical-align: middle; box-sizing: border-box; margin-left: 6px;}
-.seat-sec .seatLayout + p {font-size: 15px; margin-top: 20px;}
-.seat-sec .seatLayout + p > .f-bd {display: block; margin-bottom: 5px;}
+.seat-sec .p-ps {font-size: 15px; margin-top: 20px;}
+.seat-sec .p-ps > .f-bd {display: block; margin-bottom: 5px;}
 
 /* 좌석선택 2단게 */
 .sltComplete-sec {margin-top: 60px; background: #33373a; color: #fff;}
+.sltCompleteArea {padding: 22px 0;}
+.sltCompleteList > li {position: relative; float: left; box-sizing: border-box; color: #ccc; padding: 0 30px; height: 100px;}
+.sltCompleteList > li:before {position: absolute; left: -1px; top: 6px; content: ""; display: block; width: 1px; height: 100%; background: #8d8d8d;}
+.sltCompleteList > li.nth-1 {width: 43px; height: 119px; border: 1px solid #a6a6a6; border-radius: 3px; text-align: center; padding: 0;}
+.sltCompleteList > li.nth-1:before {display: none;}
+.sltCompleteList > li.nth-1 figure {margin-top: 26px;}
+.sltCompleteList > li.nth-1 P {margin-top: 18px;}
+.sltCompleteList > li.nth-2 {width: 235px;}
+.sltCompleteList > li.nth-3 {width: 295px;}
+.sltCompleteList > li.nth-4 {width: 251px;}
+.sltCompleteList > li.nth-4 .won {position: relative; margin-left: 14px;}
+.sltCompleteList > li.nth-5 {width: 276px; padding: 0 0 0 35px;}
+.sltCompleteList > li.nth-5 .s-prc {color: #ffdc1a; font-size: 30px; font-weight: 700; float: right; margin: -10px auto 6px;}
+.sltCompleteList > li.nth-5 .a-btn {display: block; width: 100%; height: 53px; box-sizing: border-box; border: 2px solid #2c74c1; border-radius: 2px; background: #125195; font-size: 17px; color: #fff; letter-spacing: -1px; text-align: center; line-height: 46px; font-weight: 700;}
+.sltCompleteList > li.nth-5 .a-btn .rArrow:after {top: -1px; border-color: #fff; width: 8px; height: 8px; border-width: 2px; left: 15px;}
+.sltCompleteList > li > p {display: block; width: 100%;}
+.sltCompleteList > li > p:before, .sltCompleteList > li > p:after {content: ""; display: block;}
+.sltCompleteList > li > p:after {clear: both;}
+.sltCompleteList > li > p > span {float: left;}
+.sltCompleteList > li > p > .s-lbl {display: block; margin-right: 12px;}
+.sltCompleteList > li > p > .f-bd {color: #fff;}
+
+/* 예약자 정보입력, 예약완료 공통 */
+.bkTbCms h3 {font-size: 18px; font-weight: 700; margin-top: 35px;}
+.bkTbCms .tbCms {width: 100%; margin-top: 12px; border-top: 2px solid #333; border-bottom: 1px solid #bbb;}
+.bkTbCms .tbCms col.nth-1 {width: 175px;}
+.bkTbCms .tbCms col.nth-2 {}
+.bkTbCms .tbCms tr {border-top: 1px solid #d7d7d7;}
+.bkTbCms .tbCms th, .bkTbCms .tbCms td {color: #232323; padding: 10px 0 10px 24px;}
+.bkTbCms .tbCms th {font-size: 15px; background: #f7f7f7; font-weight: 700;}
+.bkTbCms .tbCms td {font-size: 16px; border-left: 1px solid #d7d7d7;}
+.bkTbCms .tbCms .s-l {margin: 0 5px;}
+.bkTbCms .tbCms .a-btn.seat {display: inline-block; padding: 0 11px; height: 30px; color: #fff; font-size: 14px; background: #125195; border-radius: 2px; vertical-align: middle; text-align: center; line-height: 26px; margin-left: 18px;}
+.bkTbCms .btnArea {margin-top: 50px; text-align: center;}
+.bkTbCms .btnArea .a-btn {width: 274px; height: 60px; display: inline-block; font-size: 20px; box-sizing: border-box; border: 1px solid #808080; background: #f7f7f7; font-weight: 700; letter-spacing: 0; line-height: 54px;}
+.bkTbCms .btnArea .a-1 {}
+.bkTbCms .btnArea .a-2 {border-color: #125195; background: #125195; color: #FFF; margin-left: 40px;}
+
+/* 예약자 정보입력 */
+.bookerInfo-sec {}
+.bookerInfo-sec input[type=checkbox] {width: 16px; height: 16px;}
+.bookerInfo-sec input[type=checkbox] + label {font-size: 15px; font-weight: 400;}
+.bookerInfo-sec .bkInfoTb {margin-top: 25px;}
+.bookerInfo-sec .bkInfoTb .s-prc {color: #e31531; font-weight: 800; font-size: 26px;}
+.bookerInfo-sec .bkInfoTb .s-prc > span {font-size: 17px; font-weight: 400; margin-left: 3px;}
+.bookerInfo-sec .bkInputTb td > span {display: inline-block; vertical-align: middle;}
+.bookerInfo-sec .bkInputTb .inp, .bookerInfo-sec .bkInputTb .slt {position: relative; height: 27px; border: 1px solid #d8d8d8; box-sizing: border-box;}
+.bookerInfo-sec .bkInputTb .slt {padding-bottom: 3px; top: 1px;}
+.bookerInfo-sec .bkInputTb .inp-01 {text-indent: 5px; width: 212px;}
+.bookerInfo-sec .bkInputTb .inp-02 {width: 70px; text-align: center;}
+.bookerInfo-sec .bkInputTb .slt-01 {width: 60px; padding-left: 4px;}
+.bookerInfo-sec .bkInputTb .s-ps {font-size: 14px; color: #595959; margin-left: 10px;}
+.bookerInfo-sec .p-ps {font-size: 15px; margin: 10px 0; padding-left: 20px;}
+.bookerInfo-sec h3 .agree-01{margin-left: 20px;}
+.bookerInfo-sec .txtArea {}
+.bookerInfo-sec .txtArea .inTxt {width: 1075px; height: 80px; overflow: auto; margin: 14px auto; border: 1px solid #d7d7d7; font-size: 12px; padding: 5px 15px; box-sizing: border-box; word-break: keep-all; font-family: "Dutom", sans-serif;}
+.bookerInfo-sec .txtArea .inTxt .p-1 {font-size: 14px; font-weight: 700; color: #232323;}
+.bookerInfo-sec .txtArea .inTxt .p-2 {font-size: 13px; color: #666; font-weight: 700; margin-top: 8px;}
+
+/* 예약완료 */
+.bkComplete-sec {}
+.bkComplete-sec .bkInfoTb .s-prc {color: #e31531; font-weight: 700; font-size: 17px;}
+.bkComplete-sec .bkInfoTb .s-prc > span {font-weight: 400; margin-left: 3px;}
+.bkComplete-sec .mainTxt {color: #232323; font-size: 18px; text-align: center; letter-spacing: -1px; padding: 90px 0 50px;}
+.bkComplete-sec .mainTxt h2 {font-size: 38px; font-weight: 700;}
+.bkComplete-sec .mainTxt h2 > span {font-family: "Nanum Myeongjo", sans-serif;}
+.bkComplete-sec .mainTxt .p-1 {margin-top: 12px; line-height: 1.7; }
+.bkComplete-sec .mainTxt .p-1 .bor-b {border-bottom: 1px solid #232323; font-weight: 700;}

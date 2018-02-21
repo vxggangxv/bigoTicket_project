@@ -82,6 +82,6 @@ select.reset {width: 70px; height: 32px; border: 1px solid #b6b6b6; background: 
 .pathNav > ul > li {display: inline-block; margin-right: 5px;}
 .pathNav > ul > li:first-child {margin-right: 0;}
 .pathNav > ul > li > a {font-size: 14px;}
-.pathNav > ul > li.on > a {color: #125195;}
+.pathNav > ul > li.on > a {color: #125195; font-weight: 700;}
 .pathNav > ul > li .rArrow {position: relative; display: inline-block; top: 1px; width: 6px; margin-left: 3px;}
 .pathNav > ul > li .rArrow:after {width: 6px; height: 6px;}

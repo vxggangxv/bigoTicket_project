@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<!--[if IE 8]><html lang="ko-KR" class="no-js ie8 lt-ie10"><![endif]-->
+<!--[if IE 9]><html lang="ko-KR" class="no-js ie9 lt-ie10"><![endif]-->
+<!--[if !IE]><!-->
+<html lang="ko-KR">
+<!--<![endif]-->
+
+<head>
+    <!-- /booking/ -->
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta charset="UTF-8">
+    <title>BIG-O SHOW</title>
+
+    <!-- <meta name="descriptions" content="현재 페이지의 설명을 작성(200~300자 내외)합니다.">
+<meta name="keywords" content="현재 페이지와 관련된 키워드(10개 미만)를 입력해주세요."> -->
+    <link rel="stylesheet" href="/static/css/reset.css">
+
+
+    <link rel="stylesheet" href="/static/css/common.css">
+    <link rel="stylesheet" href="/static/css/booking/init.css">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
+    <script>
+        WebFont.load({
+        	  custom: {
+        		  families: ['Nanum Gothic', 'Noto Sans KR'],
+        		  urls: ['http://fonts.googleapis.com/earlyaccess/nanumgothic.css','http://fonts.googleapis.com/earlyaccess/notosanskr.css']
+        	  }
+          });
+    </script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/detectizr/1.5.0/detectizr.min.js"></script>
+    <script>
+        Modernizr.Detectizr.detect();
+    </script>
+
+
+    <script src="/static/js/common.js"></script>
+    <script src="/static/js/booking/init.js"></script>
+
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/respond.js/1.4.2/respond.js"></script>
+<![endif]-->
+
+</head>
+
+<body>
+    <h1 class="hidden">빅오쇼예약시스템</h1>
+    <div id="wrap" class="wrap">
+        <header class="header">
+            <div class="hd-area container">
+                <a href="/views/" class="a-logo">
+                    <img src="/img/common/bookingLogo.png" alt="빅오쇼예약시스템로고">
+                </a>
+                <nav class="g-nav">
+                    <ul class="gnb">
+                        <li><a href="/views/booking/">티켓예매</a>
+                        </li>
+                        <li><a href="">온라인쇼핑몰 구매자 예약</a>
+                        </li>
+                        <li><a href="">예매확인/취소</a>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+
+        <div class="main containerF">
+
+            <nav class="pathNav container">
+                <ul class="cf">
+                    <li><a href="/views/">홈</a>
+                    </li>
+                    <li><span class="ic-rArrow rArrow"></span>
+                    </li>
+                    <li><a href="/views/booking/index_02.html">공연일정</a>
+                    </li>
+                    <li><span class="ic-rArrow rArrow"></span>
+                    </li>
+                    <li><a href="/views/booking/index_02.html">구역 선택</a>
+                    </li>
+                    <li><span class="ic-rArrow rArrow"></span>
+                    </li>
+                    <li><a href="/views/booking/index_03.html">인원 및 좌석선택</a>
+                    </li>
+                    <li><span class="ic-rArrow rArrow"></span>
+                    </li>
+                    <li><a href="/views/booking/index_04.html">예약자 정보입력</a>
+                    </li>
+                    <li><span class="ic-rArrow rArrow"></span>
+                    </li>
+                    <li class="on"><a href="/views/booking/index_05.html">예약완료</a>
+                    </li>
+                </ul>
+            </nav>
+            <section class="bkComplete-sec bkTbCms container cm-s">
+
+                <div class="mainTxt">
+                    <h2 class="cl-blue"><span>"</span> 예약이 완료되었습니다. <span>"</span></h2>
+                    <p class="p-1">
+                        모바일 티켓은 구매 후 <span class="bor-b">10분 이내에 입력하신 휴대폰 번호로 전송</span>됩니다.
+                        <br>티켓 미수신 시 스팸 메시지함을 먼저 확인 부탁드립니다.
+                    </p>
+                </div>
+
+                <h3>예약내역 및 결제 정보</h3>
+                <table class="bkInfoTb tbCms">
+                    <colgroup>
+                        <col class="nth-1">
+                            <col class="nth-2">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>관람일자/구역</th>
+                            <td>2018년 3월 8일 목요일 <span class="s-l">ㅣ</span> A구역 (S좌석)</td>
+                        </tr>
+                        <tr>
+                            <th>좌석번호</th>
+                            <td>4열 17, 4열 18, 4열 19, 4열 20, 4열 21, 4열 22 <a href="" class="a-btn seat">선택 좌석 보기</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>인원</th>
+                            <td>총 6명 (성인 2명, 중고생,경로2명, 어린이 1명)</td>
+                        </tr>
+                        <tr>
+                            <th>상품금액</th>
+                            <td>성인 2명 36,000원 <span class="s-l">ㅣ</span> 중고생,경로 3명 24,000원 <span class="s-l">ㅣ</span> 어린이 1명 14,000원</td>
+                        </tr>
+                        <tr>
+                            <th>총 결제금액</th>
+                            <td><span class="s-prc">86,000<span>원</span></span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>예약자 정보</h3>
+                <table class="bkInputTb tbCms">
+                    <col class="nth-1">
+                        <col class="nth-2">
+                            <tbody>
+                                <tr>
+                                    <th>예약자명</th>
+                                    <td>김지영</td>
+                                </tr>
+                                <tr>
+                                    <th>휴대폰번호</th>
+                                    <td>
+                                        010-1234-5678
+                                    </td>
+                                </tr>
+                            </tbody>
+                </table>
+
+                <div class="btnArea">
+                    <a href="" class="a-btn a-1">홈</a>
+                    <a href="" class="a-btn a-2">예약확인</a>
+                </div>
+
+            </section>
+
+        </div>
+
+        <footer class="footer">
+            <div class="ft-area container">
+                <div class="d-1">
+                    <span class="s-1">티켓예매 문의전화</span>
+                    <strong>02-2202-3435</strong>
+                    <span class="s-2">
+				주중/주말 09:00~18:00 (점심시간 12:00~13:00 제외)<br>
+				매주 월요일은 빅오쇼 공연 휴장일 입니다
+			</span>
+                </div>
+                <div class="d-2">
+                    <address>
+				<span class="f-bd">여수엑스포재단</span>550-010 전라남도 여수시 박람회길 1(덕충동) 빅오과    대표자 | 신평식 이사장    사업자번호 | 417-82-08394<br>
+				통신판매신고번호 | 제2015-전남여수-0047호    TEL | 061-659-2046    FAX | 061-659-2977<br>
+				<small>Copyright (C) 2013 YEOSU BIG-O SHOW All Rights Reserved</small>
+			</address>
+                    <address>
+				<span class="f-bd">빅오쇼 티켓예매 대행사  ㈜바로네트웍스</span><br>
+				주소 : 서울특별시 강남구 테헤란로82길 15, 3층(대치동, 디아이타워) ㅣ 대표이사 : 전병권 ㅣ사업자등록번호 : 215-87-85373
+				통신판매업 : 제2017-서울강남-00561호 ㅣ TEL | 02-2202-3435    FAX | 02-2203-3435
+				<small>Copyright (C) 2013 YEOSU BIG-O SHOW All Rights Reserved</small>
+			</address>
+                </div>
+            </div>
+        </footer>
+
+    </div>
+
+</body>
+
+</html>

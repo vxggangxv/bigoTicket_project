@@ -1,0 +1,104 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/booking/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+
+    <% include ../parts/head/_commonCss.ejs %>
+    <% include ../parts/head/_headScript.ejs %>
+
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">빅오쇼예약시스템</h1>
+    <div id="wrap" class="wrap">
+        <% include ../parts/_header.ejs %>
+
+        <div class="main containerF">
+
+            <nav class="pathNav container">
+                <ul class="cf">
+                    <li><a href="/views/">홈</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li><a href="/views/booking/index_02.html">공연일정</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li><a href="/views/booking/index_02.html">구역 선택</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li><a href="/views/booking/index_03.html">인원 및 좌석선택</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li><a href="/views/booking/index_04.html">예약자 정보입력</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li class="on"><a href="/views/booking/index_05.html">예약완료</a></li>
+                </ul>
+            </nav>
+            <section class="bkComplete-sec bkTbCms container cm-s">
+
+                <div class="mainTxt">
+                    <h2 class="cl-blue"><span>"</span> 예약이 완료되었습니다. <span>"</span></h2>
+                    <p class="p-1">
+                        모바일 티켓은 구매 후 <span class="bor-b">10분 이내에 입력하신 휴대폰 번호로 전송</span>됩니다.<br>
+                        티켓 미수신 시 스팸 메시지함을 먼저 확인 부탁드립니다.
+                    </p>
+                </div>
+
+                <h3>예약내역 및 결제 정보</h3>
+                <table class="bkInfoTb tbCms">
+                    <colgroup>
+                        <col class="nth-1">
+                        <col class="nth-2">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>관람일자/구역</th>
+                            <td>2018년 3월 8일 목요일 <span class="s-l">ㅣ</span> A구역 (S좌석)</td>
+                        </tr>
+                        <tr>
+                            <th>좌석번호</th>
+                            <td>4열 17, 4열 18, 4열 19, 4열 20, 4열 21, 4열 22 <a href="" class="a-btn seat">선택 좌석 보기</a></td>
+                        </tr>
+                        <tr>
+                            <th>인원</th>
+                            <td>총 6명 (성인 2명, 중고생,경로2명, 어린이 1명)</td>
+                        </tr>
+                        <tr>
+                            <th>상품금액</th>
+                            <td>성인 2명  36,000원 <span class="s-l">ㅣ</span> 중고생,경로 3명   24,000원 <span class="s-l">ㅣ</span> 어린이 1명  14,000원</td>
+                        </tr>
+                        <tr>
+                            <th>총 결제금액</th>
+                            <td><span class="s-prc">86,000<span>원</span></span></td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <h3>예약자 정보</h3>
+                <table class="bkInputTb tbCms">
+                    <col class="nth-1">
+                    <col class="nth-2">
+                    <tbody>
+                        <tr>
+                            <th>예약자명</th>
+                            <td>김지영</td>
+                        </tr>
+                        <tr>
+                            <th>휴대폰번호</th>
+                            <td>
+                                010-1234-5678
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btnArea">
+                    <a href="" class="a-btn a-1">홈</a>
+                    <a href="" class="a-btn a-2">예약확인</a>
+                </div>
+
+			</section>
+
+		</div>
+
+        <% include ../parts/_footer.ejs %>
+    </div>
+
+</body>
+</html>
