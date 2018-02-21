@@ -1,0 +1,149 @@
+<section class="seatChk-pop fixed">
+    <div class="borTop"></div>
+
+    <header class="header-pop">
+        <h1>선택 좌석 확인<span class="a-i-x a-x"></span></h1>
+    </header>
+    <div class="main-pop cf">
+        <div class="sltArea cf">
+            <div class="d-seat">
+                <h2>선택좌석</h2>
+                <table class="d-seatTb">
+                    <colgroup>
+                        <col class="nth-1">
+                        <col class="nth-2">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>구역 및 좌석</th>
+                            <td><span class="s-green"></span>A구역 (S석)</td>
+                        </tr>
+                        <tr>
+                            <th>좌석번호</th>
+                            <td>
+                                4열 17, 4열 18, 4열 19,<br>4열 20, 4열 21, 4열 22
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+            <div class="d-area">
+                <h2>선택구역</h2>
+                <!-- 구역별 클래스 추가 area-a ~area-h -->
+                <div class="d-areaView area-a"></div>
+            </div>
+        </div>
+
+        <div class="sltAreaView">
+            <div class="seatLayout type-a">
+
+                <!-- A구역 예시 -->
+                <div class="seatArea" id="seatArea">
+                    <!-- 스노우좀: snow, 선택가능 좌석: possible, 선택한 좌석: on, 예약블가능: impossible 클래스 -->
+                    <ul class="seatList cf">
+                    <% for (var i=1; i <= 37; i ++) { %>
+                        <% if (i <= 16) { %>
+                            <li class="non">
+                                7열<br>
+                                <%=i %>
+                            </li>
+                        <% } else if (i >= 22 && i <= 23) { %>
+                            <li class="non">
+                                7열<br>
+                                <%=i %>
+                            </li>
+                        <% } else { %>
+                            <li class="possible f-sm">
+                                7열<br>
+                                <%=i %>
+                            </li>
+                        <% } %>
+                    <% } %>
+                    </ul>
+                    <ul class="seatList cf">
+                    <% for (var i=1; i <= 37; i ++) { %>
+                        <% if (i >= 22 && i <= 23) { %>
+                            <li class="non">
+                                6열<br>
+                                <%=i %>
+                            </li>
+                        <% } else { %>
+                            <li class="possible f-sm">
+                                6열<br>
+                                <%=i %>
+                            </li>
+                        <% } %>
+                    <% } %>
+                    </ul>
+                    <ul class="seatList cf">
+                    <% for (var i=1; i <= 37; i ++) { %>
+                        <li class="possible f-sm">
+                            5열<br>
+                            <%=i %>
+                        </li>
+                    <% } %>
+                    </ul>
+                    <ul class="seatList cf">
+                    <% for (var i=1; i <= 37; i ++) { %>
+                        <% if (i >= 17 && i <= 22) { %>
+                            <li class="snow on">
+                                4열<br>
+                                <%=i %>
+                            </li>
+                        <% } else { %>
+                            <li class="snow f-sm">
+                                4열<br>
+                                <%=i %>
+                            </li>
+                        <% } %>
+                    <% } %>
+                    </ul>
+                    <ul class="seatList cf">
+                    <% for (var i=1; i <= 37; i ++) { %>
+                        <% if (i <= 14) { %>
+                            <li class="impossible f-sm">
+                                3열<br>
+                                <%=i %>
+                            </li>
+                        <% } else { %>
+                            <li class="snow f-sm">
+                                3열<br>
+                                <%=i %>
+                            </li>
+                        <% } %>
+                    <% } %>
+                    </ul>
+                    <ul class="seatList cf">
+                    <% for (var i=1; i <= 37; i ++) { %>
+                        <li class="snow f-sm">
+                            2열<br>
+                            <%=i %>
+                        </li>
+                    <% } %>
+                    </ul>
+                    <ul class="seatList cf">
+                    <% for (var i=1; i <= 37; i ++) { %>
+                        <% if (i <= 7) { %>
+                            <li class="non">
+                                1열<br>
+                                <%=i %>
+                            </li>
+                        <% } else { %>
+                            <li class="snow f-sm">
+                                1열<br>
+                                <%=i %>
+                            </li>
+                        <% } %>
+                    <% } %>
+                    </ul>
+                </div>
+
+                <div class="stage">무대</div>
+            </div>
+        </div>
+        <div class="category">
+            <span class="s-on"></span> 선택한 좌석
+        </div>
+
+    </div>
+</section>

@@ -71,36 +71,36 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 .seat-sec .sltNum .s-lbl {font-weight: 700; margin-right: 10px; margin-left: 15px; font-size: 15px; vertical-align: middle;}
 .seat-sec .sltNum .s-lbl:first-child {margin-left: 0;}
 .seat-sec .sltNum .s-lbl + select {font-size: 14px; font-weight: 700; padding-bottom: 2px;}
-.seat-sec .seatLayout {position: relative; padding: 15px; border: 1px solid #b6b6b6; margin-top: 10px;}
-.seat-sec .seatLayout .h3-1 {color: #232323; font-size: 18px; padding-left: 10px;}
-.seat-sec .seatLayout .h3-1 p {padding-left: 20px; font-size: 16px;}
-.seat-sec .seatLayout .h3-1 .a-btn.reset {position: absolute; top: 18px; right: 15px; display: inline-block; width: 120px; height: 34px; box-sizing: border-box; border: 1px solid #959595; border-radius: 3px; font-size: 14px; padding-top: 5px; text-align: center; font-weight: 700;
+.seatLayout {position: relative; padding: 15px; border: 1px solid #b6b6b6; margin-top: 10px;}
+.seatLayout .h3-1 {color: #232323; font-size: 18px; padding-left: 10px;}
+.seatLayout .h3-1 p {padding-left: 20px; font-size: 16px;}
+.seatLayout .h3-1 .a-btn.reset {position: absolute; top: 18px; right: 15px; display: inline-block; width: 120px; height: 34px; box-sizing: border-box; border: 1px solid #959595; border-radius: 3px; font-size: 14px; padding-top: 5px; text-align: center; font-weight: 700;
     background: #fefefe; /* Old browsers */
     background: -moz-linear-gradient(top, #fefefe 0%, #f2f0f3 100%); /* FF3.6-15 */
     background: -webkit-linear-gradient(top, #fefefe 0%,#f2f0f3 100%); /* Chrome10-25,Safari5.1-6 */
     background: linear-gradient(to bottom, #fefefe 0%,#f2f0f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
     filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f2f0f3',GradientType=0 ); /* IE6-9 */
 }
-.seat-sec .seatLayout .h3-1 .a-btn.reset:before {position: relative; top: -1px; margin-right: 4px; content: ""; display: inline-block; vertical-align: middle; width: 16px; height: 16px; background: url(/img/common/btnReset.png);}
-.seat-sec .seatLayout .seatArea {margin-top: 20px;}
-.seat-sec .seatLayout .seatArea .seatList {font-size: 0; text-align: center; margin-top: 5px;}
-.seat-sec .seatLayout .seatArea .seatList > li {display: inline-block; width: 25px; height: 36px; box-sizing: border-box; border: 1px solid #c8c8c8; cursor: pointer; text-align: center; font-size: 11px; font-weight: 700; border-radius: 3px; padding: 2px 1.5px; margin-left: 3px; line-height: 1.4; font-family: "Dotum", sans-serif;}
-.seat-sec .seatLayout .seatArea .seatList > li:first-child {margin-left: 0;}
-.seat-sec .seatLayout .seatArea .seatList > li.non {visibility: hidden;}
-.seat-sec .seatLayout .seatArea .seatList > li.snow,
-.seat-sec .seatLayout .category .s-snow {background: #e7f3ff;}
-.seat-sec .seatLayout .seatArea .seatList > li.possible,
-.seat-sec .seatLayout .category .s-possible {background: #ffffd9;}
-.seat-sec .seatLayout .seatArea .seatList > li.impossible,
-.seat-sec .seatLayout .category .s-impossible {background: #e9e9e9;}
-.seat-sec .seatLayout .seatArea .seatList > li.impossible {font-weight: 400; color: #727272;}
-.seat-sec .seatLayout .seatArea .seatList > li.f-sm {font-weight: 400;}
-.seat-sec .seatLayout .seatArea .seatList > li.on,
-.seat-sec .seatLayout .category .s-on {background: #125195;}
-.seat-sec .seatLayout .seatArea .seatList > li.on {color: #fff;}
-.seat-sec .seatLayout .stage {width: 1030px; height: 25px; margin: 25px auto; background: url(/img/booking/stageBg.jpg) repeat-x; text-align: center;}
-.seat-sec .seatLayout .category {text-align: right; color: #232323; font-size: 14px; padding-right: 24px;}
-.seat-sec .seatLayout .category > span {position: relative; display: inline-block; width: 18px; height: 18px; border: 1px solid #bbbbbb; vertical-align: middle; box-sizing: border-box; margin-left: 6px;}
+.seatLayout .h3-1 .a-btn.reset:before {position: relative; top: -1px; margin-right: 4px; content: ""; display: inline-block; vertical-align: middle; width: 16px; height: 16px; background: url(/img/common/btnReset.png);}
+.seatLayout .seatArea {margin-top: 20px;}
+.seatLayout .seatArea .seatList {font-size: 0; text-align: center; margin-top: 5px;}
+.seatLayout .seatArea .seatList > li {display: inline-block; width: 25px; height: 36px; box-sizing: border-box; border: 1px solid #c8c8c8; cursor: pointer; text-align: center; font-size: 11px; font-weight: 700; border-radius: 3px; padding: 2px 1.5px; margin-left: 3px; line-height: 1.4; font-family: "Dotum", sans-serif;}
+.seatLayout .seatArea .seatList > li:first-child {margin-left: 0;}
+.seatLayout .seatArea .seatList > li.non {visibility: hidden;}
+.seatLayout .seatArea .seatList > li.snow,
+.seatLayout .category .s-snow {background: #e7f3ff;}
+.seatLayout .seatArea .seatList > li.possible,
+.seatLayout .category .s-possible {background: #ffffd9;}
+.seatLayout .seatArea .seatList > li.impossible,
+.seatLayout .category .s-impossible {background: #e9e9e9;}
+.seatLayout .seatArea .seatList > li.impossible {font-weight: 400; color: #727272;}
+.seatLayout .seatArea .seatList > li.f-sm {font-weight: 400;}
+.seatLayout .seatArea .seatList > li.on,
+.seatLayout .category .s-on {background: #125195;}
+.seatLayout .seatArea .seatList > li.on {color: #fff;}
+.seatLayout .stage {width: 1030px; height: 25px; margin: 25px auto; background: url(/img/booking/stageBg.jpg) repeat-x; text-align: center;}
+.seatLayout .category {text-align: right; color: #232323; font-size: 14px; padding-right: 24px;}
+.seatLayout .category > span {position: relative; display: inline-block; width: 18px; height: 18px; border: 1px solid #bbbbbb; vertical-align: middle; box-sizing: border-box; margin-left: 6px;}
 .seat-sec .p-ps {font-size: 15px; margin-top: 20px;}
 .seat-sec .p-ps > .f-bd {display: block; margin-bottom: 5px;}
 
@@ -130,13 +130,13 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 
 /* 예약자 정보입력, 예약완료 공통 */
 .bkTbCms h3 {font-size: 18px; font-weight: 700; margin-top: 35px;}
-.bkTbCms .tbCms {width: 100%; margin-top: 12px; border-top: 2px solid #333; border-bottom: 1px solid #bbb;}
+.bkTbCms .tbCms {width: 100%; margin-top: 12px; border-top: 2px solid #333; border-bottom: 1px solid #bbb; table-layout: fixed;}
 .bkTbCms .tbCms col.nth-1 {width: 175px;}
 .bkTbCms .tbCms col.nth-2 {}
 .bkTbCms .tbCms tr {border-top: 1px solid #d7d7d7;}
 .bkTbCms .tbCms th, .bkTbCms .tbCms td {color: #232323; padding: 10px 0 10px 24px;}
 .bkTbCms .tbCms th {font-size: 15px; background: #f7f7f7; font-weight: 700;}
-.bkTbCms .tbCms td {font-size: 16px; border-left: 1px solid #d7d7d7;}
+.bkTbCms .tbCms td {font-size: 16px; border-left: 1px solid #d7d7d7; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .bkTbCms .tbCms .s-l {margin: 0 5px;}
 .bkTbCms .tbCms .a-btn.seat {display: inline-block; padding: 0 11px; height: 30px; color: #fff; font-size: 14px; background: #125195; border-radius: 2px; vertical-align: middle; text-align: center; line-height: 26px; margin-left: 18px;}
 .bkTbCms .btnArea {margin-top: 50px; text-align: center;}

@@ -89,7 +89,7 @@
                 </table>
 
                 <div class="btnArea">
-                    <a href="" class="a-btn a-1">홈</a>
+                    <a href="/views/" class="a-btn a-1">홈</a>
                     <a href="" class="a-btn a-2">예약확인</a>
                 </div>
 
@@ -98,6 +98,12 @@
 		</div>
 
         <% include ../parts/_footer.ejs %>
+
+        <div id="popWrap" class="popWrap">
+            <div class="backDropBg"></div>
+
+            <% include ../parts/booking/_sltSeatCheckPop.ejs %>
+        </div>
     </div>
 
 </body>

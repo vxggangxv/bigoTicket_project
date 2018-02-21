@@ -31,7 +31,7 @@ var jsSrc   = config.staticOutput+'/js/**/*.js';
 // 밑줄 기호(_)가 붙은 파일은 컴파일 대상에서 제외.
 var ejsSrc  = config.input+'/ejs/**/!(_)*.ejs';
 // 부품(Parts) 폴더 _*.ejs 파일 주소
-var ejsPartsSrc = config.input+'/ejs/parts/_*.ejs';
+var ejsPartsSrc = config.input+'/ejs/parts/**/_*.ejs';
 
 /**
  * Gulp 업무(Tasks) 정의

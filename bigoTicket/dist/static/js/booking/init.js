@@ -1,7 +1,7 @@
 $(function() {
 
     seatTab();
-    sltSeat()
+    sltSeat();
 
 });
 
