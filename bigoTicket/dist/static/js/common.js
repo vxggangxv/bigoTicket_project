@@ -1,6 +1,6 @@
 $(function() {
 
-    fixedPop(".a-btn.seat", ".seatChk-pop", ".seatChk-pop .a-x");
+    fixedPop(".a-btn.seat", ".pop-seatChk", ".pop-seatChk .a-x");
 
 });
 
@@ -9,7 +9,7 @@ function fixedPop(op, itm, cls) {
     var popOpen = $(op),
         pop = $(itm),
         popCls = $(cls),
-        popWrap = $("#popWrap");
+        popWrap = $("#wrap-pop");
 
     popOpen.on("click", function() {
         popWrap.css("z-index", "100");

@@ -1,6 +1,6 @@
 <% include ../parts/_docHead.ejs %>
 <head>
-    <!-- <%= initPage = '/booking/' %> -->
+    <!-- <%= initPage = '/onBooking/' %> -->
     <% include ../parts/head/_headMeta.ejs %>
 
     <% include ../parts/head/_commonCss.ejs %>
@@ -19,9 +19,9 @@
                 <ul class="cf">
                     <li><a href="/views/">홈</a></li>
                     <li><span class="ic-rArrow rArrow"></span></li>
-                    <li><a href="/views/booking/index_02.html">공연일정</a></li>
+                    <li><a href="/views/onBooking/">구매자정보 입력</a></li>
                     <li><span class="ic-rArrow rArrow"></span></li>
-                    <li class="on"><a href="/views/booking/index_02.html">구역 및 좌석선택</a></li>
+                    <li class="on"><a href="/views/onBooking/index_02.html">구역 및 좌석선택</a></li>
                 </ul>
             </nav>
             <section class="area-sec container cm-s">
@@ -33,6 +33,7 @@
 
                 <figure class="areaFg" id="areaFg">
                     <img src="/img/booking/area_full.jpg" alt="좌석선택이미지" class="areaImg">
+                    <figcaption class="figCap-1"><span class="i-i">!</span> 온라인 쇼핑몰에서 구매하신 권종에 따라 S석 / P석을 선택하실 수 있습니다.</figcaption>
                 </figure>
 
                 <h3 class="tab-tit">구역별 잔여석 안내</h3>
@@ -59,19 +60,19 @@
                             <p><a href="javascript:;" class="a-btn">구역선택</a></p>
                         </div>
                     </li>
-                    <li>
+                    <!-- 예약불가 off 클래스 -->
+                    <li class="off">
                         <div class="d-tit"><span class="s-org"></span>D구역(P석)</div>
                         <div class="d-txt">
                             <p class="nth-1">0석</p>
-                            <!-- 예매마감 off 클래스 -->
-                            <p><a href="javascript:;" class="a-btn off">예매마감</a></p>
+                            <p><a href="javascript:;" class="a-btn">예약불가</a></p>
                         </div>
                     </li>
-                    <li>
+                    <li class="off">
                         <div class="d-tit"><span class="s-org"></span>E구역(P석)</div>
                         <div class="d-txt">
                             <p class="nth-1">12석</p>
-                            <p><a href="javascript:;" class="a-btn">구역선택</a></p>
+                            <p><a href="javascript:;" class="a-btn">예약불가</a></p>
                         </div>
                     </li>
                     <li>
@@ -97,7 +98,7 @@
                     </li>
                 </ul>
 
-                <!-- 금액 기본 공백-->
+                <!-- 구역선택 클릭 시 등장-->
                 <div class="wrap-areaInfo" id="wrap-areaInfo">
                     <h3 class="tab-tit"><span class="cl-blue">A구역</span> 좌석 등급 및 잔여석</h3>
                     <table class="areaSeatTb">
@@ -134,7 +135,7 @@
                         여수시민/ 유공자/등 특별할인 대상자는 공연 당일 현장 구매일 경우만 확인증(주민등록증, 복지카드 등)을 제시하시면 할인 구매하실 수 있습니다.
                     </p>
 
-                    <div class="btnArea"><a href="/views/booking/index_03.html" class="a-btn f-bd">구역선택완료</a></div>
+                    <div class="btnArea"><a href="/views/onBooking/index_03.html" class="a-btn f-bd">구역선택완료</a></div>
                 </div>
 
 			</section>

@@ -1,0 +1,78 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/onBooking/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+
+    <% include ../parts/head/_commonCss.ejs %>
+    <% include ../parts/head/_headScript.ejs %>
+
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">빅오쇼예약시스템</h1>
+    <div id="wrap" class="wrap">
+        <% include ../parts/_header.ejs %>
+
+        <div class="main containerF">
+
+            <nav class="pathNav container">
+                <ul class="cf">
+                    <li><a href="/views/">홈</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li class="on"><a href="/views/onBooking/">구매자정보 입력</a></li>
+                </ul>
+            </nav>
+            <section class="bookerInfo-sec bkTbCms container cm-s">
+
+                <h2 class="ls-1"><span class="cl-blue">구매자 정보가 확인</span> 되었습니다.</h2>
+                <p class="p-1 ls-1">
+                    구매내역을 확인 후, 좌석 예약을 진행해주세요.
+                </p>
+
+                <h3>예약내역 및 결제 정보</h3>
+                <table class="bkInfoTb tbCms">
+                    <colgroup>
+                        <col class="nth-1">
+                        <col class="nth-2">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>구매처</th>
+                            <td>쿠팡</td>
+                        </tr>
+                        <tr>
+                            <th>구매일시</th>
+                            <td>2018년 3월 1일</td>
+                        </tr>
+                        <tr>
+                            <th>휴대폰</th>
+                            <td>010-1234-5678</td>
+                        </tr>
+                        <tr>
+                            <th>예약인증번호</th>
+                            <td><span class="cl-blue f-bd">25446656568</span></td>
+                        </tr>
+                        <tr>
+                            <th>구매권종</th>
+                            <td>S석</td>
+                        </tr>
+                        <tr>
+                            <th>인원</th>
+                            <td>총 6명 (성인 2명, 중고생,경로 2명, 어린이 1명)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btnArea">
+                    <a href="/views/onBooking/index_02.html" class="a-btn wd-2 a-2">구역 및 좌석 예약 <span class="ic-rArrow rArrow"></span></a>
+                </div>
+
+			</section>
+
+		</div>
+
+        <% include ../parts/_footer.ejs %>
+    </div>
+
+</body>
+</html>

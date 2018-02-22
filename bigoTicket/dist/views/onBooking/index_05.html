@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-    <!-- /booking/ -->
+    <!-- /onBooking/ -->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
     <title>BIG-O SHOW</title>
@@ -17,7 +17,7 @@
 
 
     <link rel="stylesheet" href="/static/css/common.css">
-    <link rel="stylesheet" href="/static/css/booking/init.css">
+    <link rel="stylesheet" href="/static/css/onBooking/init.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
@@ -37,7 +37,7 @@
 
 
     <script src="/static/js/common.js"></script>
-    <script src="/static/js/booking/init.js"></script>
+    <script src="/static/js/onBooking/init.js"></script>
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -76,23 +76,23 @@
                     </li>
                     <li><span class="ic-rArrow rArrow"></span>
                     </li>
-                    <li><a href="/views/booking/index_02.html">공연일정</a>
+                    <li><a href="/views/onBooking/">구매자정보 입력</a>
                     </li>
                     <li><span class="ic-rArrow rArrow"></span>
                     </li>
-                    <li><a href="/views/booking/index_02.html">구역 선택</a>
+                    <li><a href="/views/onBooking/index_02.html">구역선택</a>
                     </li>
                     <li><span class="ic-rArrow rArrow"></span>
                     </li>
-                    <li><a href="/views/booking/index_03.html">인원 및 좌석선택</a>
+                    <li><a href="/views/onBooking/index_03.html">인원 및 좌석선택</a>
                     </li>
                     <li><span class="ic-rArrow rArrow"></span>
                     </li>
-                    <li><a href="/views/booking/index_04.html">예약자 정보입력</a>
+                    <li><a href="/views/onBooking/index_04.html">예약 정보 확인</a>
                     </li>
                     <li><span class="ic-rArrow rArrow"></span>
                     </li>
-                    <li class="on"><a href="/views/booking/index_05.html">예약완료</a>
+                    <li class="on"><a href="/views/onBooking/index_05.html">예약 완료</a>
                     </li>
                 </ul>
             </nav>
@@ -106,7 +106,7 @@
                     </p>
                 </div>
 
-                <h3>예약내역 및 결제 정보</h3>
+                <h3>예약완료 정보</h3>
                 <table class="bkInfoTb tbCms">
                     <colgroup>
                         <col class="nth-1">
@@ -114,51 +114,46 @@
                     </colgroup>
                     <tbody>
                         <tr>
-                            <th>관람일자/구역</th>
-                            <td>2018년 3월 8일 목요일 <span class="s-l">ㅣ</span> A구역 (S좌석)</td>
+                            <th>관람일자</th>
+                            <td>2018년 3월 8일 목요일</td>
+                        </tr>
+                        <tr>
+                            <th>관람구역</th>
+                            <td>A구역 (S좌석)</td>
                         </tr>
                         <tr>
                             <th>좌석번호</th>
-                            <td>4열 17, 4열 18, 4열 19, 4열 20, 4열 21, 4열 22 <a href="" class="a-btn seat">선택 좌석 보기</a>
+                            <td>5열 1, 5열 2, 5열 3, 5열 4, 5열 5, 5열 6 <a href="#" class="a-btn seat">선택 좌석 보기</a>
                             </td>
                         </tr>
                         <tr>
                             <th>인원</th>
                             <td>총 6명 (성인 2명, 중고생,경로2명, 어린이 1명)</td>
                         </tr>
-                        <tr>
-                            <th>상품금액</th>
-                            <td>성인 2명 36,000원 <span class="s-l">ㅣ</span> 중고생,경로 3명 24,000원 <span class="s-l">ㅣ</span> 어린이 1명 14,000원</td>
-                        </tr>
-                        <tr>
-                            <th>총 결제금액</th>
-                            <td><span class="s-prc">86,000<span>원</span></span>
-                            </td>
-                        </tr>
                     </tbody>
                 </table>
 
-                <h3>예약자 정보</h3>
+                <h3>구매자 정보</h3>
                 <table class="bkInputTb tbCms">
                     <col class="nth-1">
                         <col class="nth-2">
                             <tbody>
-                                <tr>
-                                    <th>예약자명</th>
-                                    <td>김지영</td>
-                                </tr>
                                 <tr>
                                     <th>휴대폰번호</th>
                                     <td>
                                         010-1234-5678
                                     </td>
                                 </tr>
+                                <tr>
+                                    <th>예약인증번호</th>
+                                    <td>25445665658</td>
+                                </tr>
                             </tbody>
                 </table>
 
                 <div class="btnArea">
                     <a href="/views/" class="a-btn a-1">홈</a>
-                    <a href="" class="a-btn a-2">예약확인</a>
+                    <a href="" class="a-btn a-2">예약내역 확인</a>
                 </div>
 
             </section>

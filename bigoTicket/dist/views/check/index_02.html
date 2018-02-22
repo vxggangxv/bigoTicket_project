@@ -6,7 +6,7 @@
 <!--<![endif]-->
 
 <head>
-    <!-- / -->
+    <!-- /check/ -->
     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
     <meta charset="UTF-8">
     <title>BIG-O SHOW</title>
@@ -17,7 +17,7 @@
 
 
     <link rel="stylesheet" href="/static/css/common.css">
-    <link rel="stylesheet" href="/static/css/init.css">
+    <link rel="stylesheet" href="/static/css/check/init.css">
 
     <script src="https://ajax.googleapis.com/ajax/libs/webfont/1.6.26/webfont.js"></script>
     <script>
@@ -37,7 +37,7 @@
 
 
     <script src="/static/js/common.js"></script>
-    <script src="/static/js/init.js"></script>
+    <script src="/static/js/check/init.js"></script>
 
     <!--[if lt IE 9]>
     <script type="text/javascript" src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
@@ -70,61 +70,29 @@
 
         <div class="main containerF">
 
-            <section class="visual-sec">
-                <div class="inArea">
-                    <div class="txtArea">
-                        <p>여수 밤바다를 물들이는 아름다운 빅오쇼</p>
-                        <h2>환상적인 쇼를 지금 바로 감상해보세요</h2>
-                    </div>
-                    <div class="btnArea">
-                        <a href="">티켓 예약하기</a>
-                    </div>
-                </div>
-            </section>
-
-            <section class="link-sec container">
-                <h2>Yousu Big o show <span class="thColor1">Reservation</span></h2>
-                <ul class="linkList cf">
-                    <li class="cf nth-1">
-                        <div class="d-1">
-                            <figure>
-                                <img src="/img/pic_01.jpg" alt="티켓">
-                            </figure>
-                        </div>
-                        <div class="d-2">
-                            <h3>티켓 예매하기</h3>
-                            <p>빅오쇼 티켓 예매 시스템 홈페이지에서
-                                <br>예매 및 결제가 가능합니다.</p>
-                            <a href="" class="thColor1">바로가기<img src="/img/rArrow.png" alt="화살표"></a>
-                        </div>
+            <nav class="pathNav container">
+                <ul class="cf">
+                    <li><a href="/views/">홈</a>
                     </li>
-                    <li class="cf nth-2">
-                        <div class="d-1">
-                            <figure>
-                                <img src="/img/pic_02.jpg" alt="쇼핑몰">
-                            </figure>
-                        </div>
-                        <div class="d-2">
-                            <h3>쇼핑몰 구매자 티켓 예매하기</h3>
-                            <p>티몬, 쿠팡, 지마켓 등 온라인쇼핑몰에서
-                                <br>구매하신 분께서는 여기서 예약하세요.</p>
-                            <a href="" class="thColor1">바로가기<img src="/img/rArrow.png" alt="화살표"></a>
-                        </div>
+                    <li><span class="ic-rArrow rArrow"></span>
                     </li>
-                    <li class="cf nth-3">
-                        <div class="d-1">
-                            <figure>
-                                <img src="/img/pic_03.jpg" alt="예매내역">
-                            </figure>
-                        </div>
-                        <div class="d-2">
-                            <h3>예매내역 조희/취소</h3>
-                            <p>예매 및 예약내역을 조회 및 취소
-                                <br>하실 수 있습니다.</p>
-                            <a href="" class="thColor1">바로가기<img src="/img/rArrow.png" alt="화살표"></a>
-                        </div>
+                    <li class="on"><a href="/views/onBooking/">구매자정보 입력</a>
                     </li>
                 </ul>
+            </nav>
+            <section class="bookerInfo-sec bkTbCms container cm-s">
+
+                <h2 class="ls-1">온라인 쇼핑몰 구매자 예약</h2>
+                <p class="p-1 ls-1">
+                    쿠팡/티몬/ 지마켓 등 외부 온라인 쇼핑몰 구매완료 고객
+                </p>
+
+                <h3>예약자 정보 입력</h3>
+
+                <div class="btnArea">
+                    <a href="/views/onBooking/index_01_02.html" class="a-btn wd-2 a-2">구매내역 인증 <span class="ic-rArrow rArrow"></span></a>
+                </div>
+
             </section>
 
         </div>

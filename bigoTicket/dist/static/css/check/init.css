@@ -1,0 +1,58 @@
+@charset "utf-8";
+@import url(http://fonts.googleapis.com/earlyaccess/nanummyeongjo.css);
+
+.footer {margin-top: 150px;}
+.pathNav {margin-top: 20px;}
+
+/* 공통 */
+.main > section[class*='-sec'].cm-s > h2 {font-size: 30px; font-weight: 700; margin: 15px auto 8px;}
+.main > section[class*='-sec'].cm-s > .p-1 {font-size: 17px;}
+.cl-blue {color: #125195;}
+.bg-blue {color: #125195;}
+.fz-17 {font-size: 17px;}
+.bor-b6 {border: 1px solid #b6b6b6;}
+
+/* 구역선택 */
+.s-green, .s-org {display: inline-block; vertical-align: middle; width: 15px; height: 15px; border: 1px solid #b6b6b6; box-sizing: border-box; margin-right: 7px;}
+.s-green {background: #69bf64;}
+.s-org {background: #fdc169;}
+
+/* 예약자 정보입력, 예약완료 공통 */
+.bkTbCms h3 {font-size: 18px; font-weight: 700; margin-top: 35px;}
+.bkTbCms .tbCms {width: 100%; margin-top: 12px; border-top: 2px solid #333; border-bottom: 1px solid #bbb; table-layout: fixed;}
+.bkTbCms .tbCms col.nth-1 {width: 175px;}
+.bkTbCms .tbCms col.nth-2 {}
+.bkTbCms .tbCms tr {border-top: 1px solid #d7d7d7;}
+.bkTbCms .tbCms th, .bkTbCms .tbCms td {color: #232323; padding: 10px 0 10px 24px;}
+.bkTbCms .tbCms th {font-size: 15px; background: #f7f7f7; font-weight: 700;}
+.bkTbCms .tbCms td {font-size: 16px; border-left: 1px solid #d7d7d7; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
+.bkTbCms .tbCms .s-l {margin: 0 5px;}
+.bkTbCms .tbCms .a-btn.seat {display: inline-block; padding: 0 11px; height: 30px; color: #fff; font-size: 14px; background: #125195; border-radius: 2px; vertical-align: middle; text-align: center; line-height: 26px; margin-left: 18px;}
+.bkTbCms .btnArea {margin-top: 70px; text-align: center;}
+.bkTbCms .btnArea .a-btn {position: relative; width: 274px; height: 60px; display: inline-block; font-size: 20px; box-sizing: border-box; border: 1px solid #808080; background: #f7f7f7; font-weight: 700; letter-spacing: 0; line-height: 54px;}
+.bkTbCms .btnArea .a-btn.wd-2 {width: 340px; margin-top: 20px;}
+.bkTbCms .btnArea .a-1 {margin-right: 40px;}
+.bkTbCms .btnArea .a-2 {border-color: #125195; background: #125195; color: #FFF;}
+.bkTbCms .btnArea .a-btn .rArrow:after {top: -1px; border-color: #fff; width: 10px; height: 10px; border-width: 2px; left: 5px;}
+
+/* 예매 내역 조회/취소 */
+.lookup-sec {}
+.lookup-sec .d-row-1 {margin-top: 66px;}
+.lookup-sec .d-row-1 div[class^=flt-] {float: left; width: 516px; box-sizing: border-box;}
+.lookup-sec .d-row-1 .flt-2 {margin-left: 60px;}
+.lookup-sec .d-row-1 div[class^=flt-] .inBox {border: 1px solid #bbb; margin-top: 15px; padding: 25px 20px 80px; height: 268px; box-sizing: border-box;}
+.lookup-sec h3 {font-size: 20px; font-weight: 700;}
+.lookup-sec h3 .rArrow:after {vertical-align: middle; border-color: #666; width: 4px; height: 4px; border-width: 2px; margin-left: 1px; top: -1px;}
+.lookup-sec h3 .f-sm {font-weight: 400;}
+.lookup-sec .tbCms {width: 100%;  table-layout: fixed;}
+.lookup-sec .tbCms col.nth-1 {width: 110px;}
+.lookup-sec .tbCms col.nth-2 {}
+.lookup-sec .tbCms th, .lookup-sec .tbCms td {color: #232323; padding: 10px 0; font-size: 17px;}
+.lookup-sec .tbCms th {font-weight: 700;}
+.lookup-sec .tbCms .inp, .lookup-sec .tbCms .slt {position: relative; height: 40px; border: 1px solid #919191; box-sizing: border-box;}
+.lookup-sec .tbCms .slt {padding-bottom: 3px; top: 1px;}
+.lookup-sec .tbCms .inp-01 {text-indent: 5px; width: 350px;}
+.lookup-sec .tbCms .inp-02 {width: 98px; text-align: center;}
+.lookup-sec .tbCms .s- {position: relative; top: -3px; height: 1px; width: 8px; background: #919191; display: inline-block; margin: 0 5px;}
+.lookup-sec .tbCms .s-ps {font-size: 15px; color: #e54f39; display: block; margin-top: 2px;}
+.lookup-sec .a-btn.btn-1 {position: absolute; bottom: 25px; width: 350px; height: 60px; display: inline-block; font-size: 18px; box-sizing: border-box; border-color: #125195; background: #0062aa; color: #FFF; letter-spacing: 0; line-height: 58px; text-align: center;}

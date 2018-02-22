@@ -1,0 +1,83 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/onBooking/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+
+    <% include ../parts/head/_commonCss.ejs %>
+    <% include ../parts/head/_headScript.ejs %>
+
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">빅오쇼예약시스템</h1>
+    <div id="wrap" class="wrap">
+        <% include ../parts/_header.ejs %>
+
+        <div class="main containerF">
+
+            <nav class="pathNav container">
+                <ul class="cf">
+                    <li><a href="/views/">홈</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li><a href="/views/onBooking/">구매자정보 입력</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li><a href="/views/onBooking/index_02.html">구역선택</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li><a href="/views/onBooking/index_03.html">인원 및 좌석선택</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li class="on"><a href="/views/onBooking/index_04.html">예약 정보 확인</a></li>
+                </ul>
+            </nav>
+            <section class="bookerInfo-sec bkTbCms container cm-s">
+
+                <h2 class="ls-1">예약자 정보확인</h2>
+                <p class="p-1 ls-1">
+                    ※ 선택하신 내용을 다시 한번 확인 해주세요
+                </p>
+
+                <h3>예약정보</h3>
+                <table class="bkInfoTb tbCms">
+                    <colgroup>
+                        <col class="nth-1">
+                        <col class="nth-2">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>관람일자</th>
+                            <td>2018년 3월 8일 목요일</td>
+                        </tr>
+                        <tr>
+                            <th>관람구역</th>
+                            <td>A구역 (S좌석)</td>
+                        </tr>
+                        <tr>
+                            <th>좌석번호</th>
+                            <td>5열 1, 5열 2, 5열 3, 5열 4, 5열 5, 5열 6 <a href="#" class="a-btn seat">선택 좌석 보기</a></td>
+                        </tr>
+                        <tr>
+                            <th>인원</th>
+                            <td>총 6명 (성인 2명, 중고생,경로2명, 어린이 1명)</td>
+                        </tr>
+                    </tbody>
+                </table>
+
+                <div class="btnArea">
+                    <a href="/views/" class="a-btn a-1">홈</a>
+                    <a href="/views/onBooking/index_05.html" class="a-btn a-2">예약확인</a>
+                </div>
+
+			</section>
+
+		</div>
+
+        <% include ../parts/_footer.ejs %>
+
+        <div id="wrap-pop" class="wrap-pop">
+            <div class="backDropBg"></div>
+
+            <% include ../parts/booking/_sltSeatCheckPop.ejs %>
+        </div>
+    </div>
+
+</body>
+</html>

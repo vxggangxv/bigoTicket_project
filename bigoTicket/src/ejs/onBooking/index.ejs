@@ -1,0 +1,79 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/onBooking/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+
+    <% include ../parts/head/_commonCss.ejs %>
+    <% include ../parts/head/_headScript.ejs %>
+
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">빅오쇼예약시스템</h1>
+    <div id="wrap" class="wrap">
+        <% include ../parts/_header.ejs %>
+
+        <div class="main containerF">
+
+            <nav class="pathNav container">
+                <ul class="cf">
+                    <li><a href="/views/">홈</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li class="on"><a href="/views/onBooking/">구매자정보 입력</a></li>
+                </ul>
+            </nav>
+            <section class="bookerInfo-sec bkTbCms container cm-s">
+
+                <h2 class="ls-1">온라인 쇼핑몰 구매자 예약</h2>
+                <p class="p-1 ls-1">
+                    쿠팡/티몬/ 지마켓 등 외부 온라인 쇼핑몰 구매완료 고객
+                </p>
+
+                <h3>예약자 정보 입력</h3>
+                <table class="bkInputTb tbCms">
+                    <col class="nth-1">
+                    <col class="nth-2">
+                    <tbody>
+                        <tr>
+                            <th>휴대폰번호</th>
+                            <td>
+                                <select name="" id="" class="slt slt-01">
+                                    <option value="">010</option>
+                                    <option value="">0707</option>
+                                </select>
+                                <span>-</span>
+                                <input type="text" class="inp inp-02">
+                                <span>-</span>
+                                <input type="text" class="inp inp-02">
+
+                                <span class="s-ps">※ 온라인 쇼핑몰 구매시 등록한 휴대폰 번호</span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>예약자명</th>
+                            <td>
+                                <input type="text" class="inp inp-01">
+                                <span class="s-ps">※ 구매 후 휴대폰으로 받으신 빅오쇼 예약 인증번호</span>
+                            </td>
+                        </tr>
+                    </tbody>
+                </table>
+                <p class="p-ps">
+                    * 구매후 휴대폰으로 전송된 예약인증번호를 입력하세요.  (구매처의 주문번호가 아닙니다.)<br>
+                    * 인증번호는 쇼핑몰에서 구매하신 시간에 따라 전일 오후 3시 ~오전 9시 구매시 오전 12시 발송/   오전 9시 ~ 오후 3시 구매자 : 당일 오후 6시 발송<br>
+                    * 바코드 미수신 및 문의전화  02-2202-3435/6 / 운영시간 09시~18시 (점심시간 12~1시 제외)
+                </p>
+
+                <div class="btnArea">
+                    <a href="/views/onBooking/index_01_02.html" class="a-btn wd-2 a-2">구매내역 인증 <span class="ic-rArrow rArrow"></span></a>
+                </div>
+
+			</section>
+
+		</div>
+
+        <% include ../parts/_footer.ejs %>
+    </div>
+
+</body>
+</html>

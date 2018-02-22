@@ -11,51 +11,19 @@
 .fz-17 {font-size: 17px;}
 .bor-b6 {border: 1px solid #b6b6b6;}
 
-/* 공연일정 */
-.schedule-sec {}
-.schedule-sec .calPagenation {text-align: center; margin: 50px auto 15px; padding-left: 60px;}
-.schedule-sec .calPagenation > * {position: relative; display: inline-block; vertical-align: middle;}
-.schedule-sec .calPagenation .prev, .schedule-sec .calPagenation .next {color: #888689; font-size: 12px; width: 23px; height: 23px; border: 1px solid #cdcbce; box-sizing: border-box; text-align: center; top: 2px;
-    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#fefefe+0,f2f0f3+100 */
-background: #fefefe; /* Old browsers */
-background: -moz-linear-gradient(top, #fefefe 0%, #f2f0f3 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top, #fefefe 0%,#f2f0f3 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom, #fefefe 0%,#f2f0f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', endColorstr='#f2f0f3',GradientType=0 ); /* IE6-9 */
-}
-.schedule-sec .calPagenation .prev {border-top-left-radius: 6px; border-bottom-left-radius: 6px;}
-.schedule-sec .calPagenation .next {border-top-right-radius: 6px; border-bottom-right-radius: 6px;}
-.schedule-sec .calPagenation .date {font-size: 28px; font-weight: 700; margin: 0 10px;}
-.schedule-sec .calPagenation .today {top: 2px; margin-left: 10px; background: #fff; border: 1px solid #cdcbce; font-family: "Dotum", sans-serif; font-size: 13px; color: #74787d; font-weight: 700; padding: 1px 7px 1px;}
-.schedule-sec .calTb {position: relative; width: 850px; margin: 0 auto;}
-.schedule-sec .calTb col {width: 14.28%;}
-.schedule-sec .calTb thead {border: 1px solid #dfdfdf; border-top: 2px solid #616e7b; background: #eef0f6;}
-.schedule-sec .calTb thead th {text-align: center; padding: 6px 0; font-size: 14px; font-weight: 700;}
-.schedule-sec .calTb tbody td {border: 1px solid #dfdfdf; padding: 8px 10px; height: 106px; box-sizing: border-box;}
-.schedule-sec .calTb tbody td.sat {background: #fbfdfe;}
-.schedule-sec .calTb tbody td.sun {background: #fef8f7;}
-.schedule-sec .calTb tbody td.on {background: #ffffd9;}
-.schedule-sec .calTb tbody td .day {display: block; font-size: 14px; line-height: 1; font-weight: 700;}
-.schedule-sec .calTb tbody td.sun .day {color: #d4311c;}
-.schedule-sec .calTb tbody td.sat .day {color: #063897;}
-.schedule-sec .calTb tbody td .d-1 {font-size: 15px; color: #343434; text-align: center; margin-top: 10px;}
-.schedule-sec .calTb tbody td .d-1 > span {display: block;}
-.schedule-sec .calTb tbody td .d-1 .cl-1 {color: #e6604e; text-indent: -1px;}
-.schedule-sec .calTb tbody td.passby .d-1, .schedule-sec .calTb tbody td.mon .d-1 {font-size: 16px; color: #b7b7b7;}
-.schedule-sec .calTb tbody td.passby .d-1 {margin-top: 8px;}
-.schedule-sec .calTb tbody td.mon .d-1 {margin-top: 20px;}
-
 /* 구역선택 */
 .s-green, .s-org {display: inline-block; vertical-align: middle; width: 15px; height: 15px; border: 1px solid #b6b6b6; box-sizing: border-box; margin-right: 7px;}
 .s-green {background: #69bf64;}
 .s-org {background: #fdc169;}
 
 .area-sec .areaFg {margin-top: 30px;}
+.area-sec .figCap-1 {text-align: center; color: #616e7b; background: #eef0f6; border: 1px solid #b6b6b6; border-top: none; padding: 5px 0;}
+.area-sec .figCap-1 .i-i {color: #818f99; font-size: 12px; font-family: "Dotum", sans-serif; font-weight: 700; display: inline-block; width: 14px; height: 14px; background: #fff; border: 1px solid #a8bbcb; border-radius: 50%; line-height: 1.4}
 .area-sec .tab-tit {font-size: 18px; font-weight: 700; text-align: center; margin: 60px auto 15px;}
 .area-sec .areaTab {position: relative; width: 100%;}
-.area-sec .areaTab > li {float: left; width: 12.5%; text-align: center; border: 1px solid #b6b6b6; border-left: 0; box-sizing: border-box;}
+.area-sec .areaTab > li {position: relative; float: left; width: 12.5%; text-align: center; border: 1px solid #b6b6b6; border-left: 0; box-sizing: border-box;}
 .area-sec .areaTab > li:first-child {border-left: 1px solid #b6b6b6;}
-.area-sec .areaTab > li.off:after {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba( 8, 8, 8, 0.58);}
+.area-sec .areaTab > li.off:after {content: ""; display: block; position: absolute; top: 0; left: 0; width: 100%; height: 100%; background: rgba(212, 208, 208, 0.3);}
 .area-sec .areaTab > li .d-tit {background: #f7f7f7; padding: 6px 0; border-bottom: 1px solid #b6b6b6;}
 .area-sec .areaTab > li .d-txt {padding: 0 7px;}
 .area-sec .areaTab > li .d-txt p.nth-1 {line-height: 2.5; border-bottom: 1px solid #d9d9d9;}
@@ -70,6 +38,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 .area-sec .btnArea .a-btn {display: block; font-size: 18px; color: #fff; background: #125195; width: 340px; margin: 80px auto 0; height: 60px; text-align: center;  line-height: 56px; letter-spacing: 0;}
 
 /* 좌석선택 */
+.seat-sec .figCap-1 {text-align: center; color: #616e7b; background: #eef0f6; border: 1px solid #b6b6b6; padding: 5px 0; margin-top: 25px;}
+.seat-sec .figCap-1 .i-i {color: #818f99; font-size: 12px; font-family: "Dotum", sans-serif; font-weight: 700; display: inline-block; width: 14px; height: 14px; background: #fff; border: 1px solid #a8bbcb; border-radius: 50%; line-height: 1.4}
+.seat-sec .figCap-1 + .sltNum {margin-top: -1px;}
 .seat-sec .sltNum {padding: 16px 20px; border: 1px solid #b6b6b6; margin-top: 25px;}
 .seat-sec .sltNum .s-lbl {font-weight: 700; margin-right: 10px; margin-left: 15px; font-size: 15px; vertical-align: middle;}
 .seat-sec .sltNum .s-lbl:first-child {margin-left: 0;}
@@ -106,6 +77,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 .seatLayout .category > span {position: relative; display: inline-block; width: 18px; height: 18px; border: 1px solid #bbbbbb; vertical-align: middle; box-sizing: border-box; margin-left: 6px;}
 .seat-sec .p-ps {font-size: 15px; margin-top: 20px;}
 .seat-sec .p-ps > .f-bd {display: block; margin-bottom: 5px;}
+.seat-sec .btnArea {margin-top: 70px; text-align: center;}
+.seat-sec .btnArea .a-btn {position: relative; width: 274px; height: 60px; display: inline-block; font-size: 20px; box-sizing: border-box; border: 1px solid #808080; background: #f7f7f7; font-weight: 700; letter-spacing: 0; line-height: 54px;}
+.seat-sec .btnArea .a-btn.wd-2 {width: 340px; margin-top: 20px;}
+.seat-sec .btnArea .a-1 {margin-right: 40px;}
+.seat-sec .btnArea .a-2 {border-color: #125195; background: #125195; color: #FFF; }
 
 /* 좌석선택 2단게 */
 .sltComplete-sec {margin-top: 60px; background: #33373a; color: #fff;}
@@ -142,10 +118,12 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 .bkTbCms .tbCms td {font-size: 16px; border-left: 1px solid #d7d7d7; overflow: hidden; white-space: nowrap; text-overflow: ellipsis;}
 .bkTbCms .tbCms .s-l {margin: 0 5px;}
 .bkTbCms .tbCms .a-btn.seat {display: inline-block; padding: 0 11px; height: 30px; color: #fff; font-size: 14px; background: #125195; border-radius: 2px; vertical-align: middle; text-align: center; line-height: 26px; margin-left: 18px;}
-.bkTbCms .btnArea {margin-top: 50px; text-align: center;}
+.bkTbCms .btnArea {margin-top: 70px; text-align: center;}
 .bkTbCms .btnArea .a-btn {position: relative; width: 274px; height: 60px; display: inline-block; font-size: 20px; box-sizing: border-box; border: 1px solid #808080; background: #f7f7f7; font-weight: 700; letter-spacing: 0; line-height: 54px;}
+.bkTbCms .btnArea .a-btn.wd-2 {width: 340px; margin-top: 20px;}
 .bkTbCms .btnArea .a-1 {margin-right: 40px;}
-.bkTbCms .btnArea .a-2 {border-color: #125195; background: #125195; color: #FFF;}
+.bkTbCms .btnArea .a-2 {border-color: #125195; background: #125195; color: #FFF; }
+.bkTbCms .btnArea .a-btn .rArrow:after {top: -1px; border-color: #fff; width: 10px; height: 10px; border-width: 2px; left: 5px;}
 
 /* 예약자 정보입력 */
 .bookerInfo-sec {}
@@ -159,7 +137,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 .bookerInfo-sec .bkInputTb .inp-01 {text-indent: 5px; width: 212px;}
 .bookerInfo-sec .bkInputTb .inp-02 {width: 70px; text-align: center;}
 .bookerInfo-sec .bkInputTb .slt-01 {width: 60px; padding-left: 4px;}
-.bookerInfo-sec .bkInputTb .s-ps {font-size: 14px; color: #595959; margin-left: 10px;}
+.bookerInfo-sec .bkInputTb .s-ps {font-size: 14px; color: #595959; display: block; margin-top: 5px;}
 .bookerInfo-sec .p-ps {font-size: 15px; margin: 10px 0; padding-left: 20px;}
 .bookerInfo-sec h3 .agree-01{margin-left: 20px;}
 .bookerInfo-sec .txtArea {}

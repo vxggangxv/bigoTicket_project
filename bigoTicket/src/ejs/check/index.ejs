@@ -1,0 +1,108 @@
+<% include ../parts/_docHead.ejs %>
+<head>
+    <!-- <%= initPage = '/check/' %> -->
+    <% include ../parts/head/_headMeta.ejs %>
+
+    <% include ../parts/head/_commonCss.ejs %>
+    <% include ../parts/head/_headScript.ejs %>
+
+    <% include ../parts/head/_commonScript.ejs %>
+</head>
+<body>
+    <h1 class="hidden">빅오쇼예약시스템</h1>
+    <div id="wrap" class="wrap">
+        <% include ../parts/_header.ejs %>
+
+        <div class="main containerF">
+
+            <nav class="pathNav container">
+                <ul class="cf">
+                    <li><a href="/views/">홈</a></li>
+                    <li><span class="ic-rArrow rArrow"></span></li>
+                    <li class="on"><a href="/views/onBooking/">예매확인/취소</a></li>
+                </ul>
+            </nav>
+            <section class="lookup-sec container cm-s">
+
+                <h2 class="ls-1">예매 내역 조회/취소</h2>
+
+                <div class="d-row-1 cf">
+                    <div class="flt-1">
+                        <h3><span class="ic-rArrow rArrow"></span> <span class="cl-blue">홈페이지</span> 구매자</h3>
+
+                        <div class="inBox">
+                            <table class="tbCms">
+                                <col class="nth-1">
+                                <col class="nth-2">
+                                <tbody>
+                                    <tr>
+                                        <th>예약자명</th>
+                                        <td><input type="text" class="inp inp-01"></td>
+                                    </tr>
+                                    <tr>
+                                        <th>휴대폰번호</th>
+                                        <td>
+                                            <select name="" id="" class="slt reset-2">
+                                                <option value="">010</option>
+                                                <option value="">0707</option>
+                                            </select>
+                                            <span class="s-"></span>
+                                            <input type="text" class="inp inp-02">
+                                            <span class="s-"></span>
+                                            <input type="text" class="inp inp-02">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td><a href="/views/chkeck/index_02.html" class="a-btn btn-1">예매조회</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                    <div class="flt-2">
+                        <h3><span class="ic-rArrow rArrow"></span> <span class="cl-blue">온라인쇼핑몰</span> 구매자<span class="f-sm">(쿠팡/지마켓 등)</span></h3>
+                        <div class="inBox">
+                            <table class="tbCms">
+                                <col class="nth-1">
+                                <col class="nth-2">
+                                <tbody>
+                                    <tr>
+                                        <th>휴대폰번호</th>
+                                        <td>
+                                            <select name="" id="" class="slt reset-2">
+                                                <option value="">010</option>
+                                                <option value="">0707</option>
+                                            </select>
+                                            <span class="s-"></span>
+                                            <input type="text" class="inp inp-02">
+                                            <span class="s-"></span>
+                                            <input type="text" class="inp inp-02">
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th>예약인증번호</th>
+                                        <td>
+                                            <input type="text" class="inp inp-01">
+                                            <span class="s-ps">※ 구매 후 휴대폰으로 받으신 빅오쇼 예약 인증번호</span>
+                                        </td>
+                                    </tr>
+                                    <tr>
+                                        <th></th>
+                                        <td><a href="/views/chkeck/index_02.html" class="a-btn btn-1">예매조회</a></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+
+			</section>
+
+		</div>
+
+        <% include ../parts/_footer.ejs %>
+    </div>
+
+</body>
+</html>
