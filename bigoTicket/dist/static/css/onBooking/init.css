@@ -104,7 +104,7 @@
 .bookerInfo-sec .bkInfoTb .s-prc > span {font-size: 17px; font-weight: 400; margin-left: 3px;}
 .bookerInfo-sec .bkInputTb td > span {display: inline-block; vertical-align: middle;}
 .bookerInfo-sec .bkInputTb .inp, .bookerInfo-sec .bkInputTb .slt {position: relative; height: 27px; border: 1px solid #d8d8d8; box-sizing: border-box;}
-.bookerInfo-sec .bkInputTb .slt {padding-bottom: 3px; top: 1px;}
+.bookerInfo-sec .bkInputTb .slt {top: 1px;}
 .bookerInfo-sec .bkInputTb .inp-01 {text-indent: 5px; width: 212px;}
 .bookerInfo-sec .bkInputTb .inp-02 {width: 70px; text-align: center;}
 .bookerInfo-sec .bkInputTb .slt-01 {width: 60px; padding-left: 4px;}

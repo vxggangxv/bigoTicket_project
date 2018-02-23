@@ -4,7 +4,7 @@ views/booking/index_02.html
 감싸는 <div class="wrap-areaInfo" id="wrap-areaInfo"> 추가
 
 2. 
-static/js/booking\init.js
+static/js/booking/init.js
 // 구역선택 함수 변경 , 아래 표 show(), hide() 기능 추가
 function seatTab() {}
 

@@ -8,6 +8,7 @@
 .main > section[class*='-sec'].cm-s > h2 {font-size: 30px; font-weight: 700; margin: 15px auto 8px;}
 .main > section[class*='-sec'].cm-s > .p-1 {font-size: 17px;}
 .cl-blue {color: #125195;}
+.cl-red {color: #e31531;}
 .bg-blue {color: #125195;}
 .fz-17 {font-size: 17px;}
 .bor-b6 {border: 1px solid #b6b6b6;}
@@ -90,7 +91,7 @@
 /* 예매 취소 안내 */
 .cancleGuide-sec {}
 .cancleGuide-sec h2 {font-size: 30px; font-weight: 700; text-align: center; margin-top: 105px;}
-.cancleGuide-sec .d-row-1 {width: 875px; margin: 36px auto 0; background: #f7f7f7; border: 1px solid #cfcfcf; box-sizing: border-box; padding: 25px 40px;}
+.cancleGuide-sec .d-row-1 {width: 875px; margin: 36px auto 0; background: #f7f7f7; border: 1px solid #cfcfcf; box-sizing: border-box; padding: 28px 45px;}
 .cancleGuide-sec .d-row-1 p.dot {position: relative; padding-left: 15px; color: #db4141; font-size: 17px; margin-top: 4px;}
 .cancleGuide-sec .d-row-1 p:first-child {margin-top: 0;}
 .cancleGuide-sec .d-row-1 p.dot > .rArrow {}
@@ -102,3 +103,43 @@
 .cancleGuide-sec .btnArea .a-btn .rArrow:after {top: -1px; border-color: #fff; width: 10px; height: 10px; border-width: 2px; left: 5px;}
 
 /* 예매 취소 팝업 */
+/* .wrap-pop {z-index: 100;} */
+.pop-bkCancle {width: 464px; height: 238px; margin: 50px auto 0; background: #fff;}
+.pop-bkCancle  .borTop {height: 3px; width: 100%;
+	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a22e9a+0,2367c2+50,00a28f+100 */
+background: #a22e9a; /* Old browsers */
+background: -moz-linear-gradient(left, #a22e9a 0%, #2367c2 50%, #00a28f 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(left, #a22e9a 0%,#2367c2 50%,#00a28f 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to right, #a22e9a 0%,#2367c2 50%,#00a28f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a22e9a', endColorstr='#00a28f',GradientType=1 ); /* IE6-9 */
+}
+.pop-bkCancle  .header-pop {font-size: 22px; text-align: center; font-weight: 700; padding: 14px 0 16px; border-bottom: 1px solid #d7d7d7; background: #eef0f6;}
+.pop-bkCancle  .header-pop .a-x {width: 50px; height: 50px; right: 0; top: 9px;}
+.pop-bkCancle  .header-pop .a-x:before, .pop-bkCancle  .header-pop .a-x:after {width: 28px; background: #232323; top: 25px; left: 5px;}
+.pop-bkCancle  .main-pop {padding-top: 25px;}
+.pop-bkCancle  .main-pop h2 {font-size: 18px; font-weight: 700;}
+.pop-bkCancle  .main-pop .p-1 {font-size: 22px; color: #000; text-align: center;}
+.pop-bkCancle  .main-pop .btnArea {margin-top: 35px; text-align: center;}
+.pop-bkCancle  .main-pop .btnArea .a-btn {position: relative; width: 170px; height: 54px; display: inline-block; font-size: 17px; box-sizing: border-box; border: 1px solid #cccccc; background: #fff; letter-spacing: 0; line-height: 52px; color: #585858; font-weight: 700;}
+.pop-bkCancle  .main-pop .btnArea .mr-1 {margin-right: 30px;}
+.pop-bkCancle  .main-pop .btnArea .a-2 {border-color: #125195; background: #125195; color: #FFF;}
+.pop-bkCancle  .main-pop .btnArea .a-btn .rArrow:after {top: -1px; border-color: #fff; width: 10px; height: 10px; border-width: 2px; left: 5px;}
+
+/* 예약완료 */
+.bkComplete-sec {}
+.bkComplete-sec .bkInfoTb .s-prc {color: #e31531; font-weight: 700; font-size: 17px;}
+.bkComplete-sec .bkInfoTb .s-prc.cl-2 {color: #333;}
+.bkComplete-sec .bkInfoTb .s-prc > span {font-weight: 400; margin-left: 3px;}
+.bkComplete-sec .mainTxt {color: #232323; font-size: 18px; text-align: center; letter-spacing: -1px; padding: 50px 0 0px;}
+.bkComplete-sec .mainTxt h2 {font-size: 38px; font-weight: 700;}
+.bkComplete-sec .mainTxt .p-1 {margin-top: 5px; line-height: 1.7; }
+.bkComplete-sec .mainTxt .p-1 .bor-b {display: inline-block; border-bottom: 1px solid #232323; font-weight: 700; margin-right: 5px;}
+.bkComplete-sec .mainTxt .p-1 > .rArrow:after {border-color: #db4141; border-width: 2px; top: -2px; width: 4px; height: 4px; vertical-align: middle; margin-right: 4px;}
+.bkComplete-sec.bkTbCms h3 {margin-top: 46px;}
+.bkComplete-sec .d-row-1 {margin-top: 20px;background: #f7f7f7; border: 1px solid #cfcfcf; box-sizing: border-box; padding: 15px 20px;}
+.bkComplete-sec .d-row-1 p.tit.dot {position: relative; padding-left: 15px; font-size: 17px;}
+.bkComplete-sec .d-row-1 p.tit + p {margin-top: 8px;}
+.bkComplete-sec .d-row-1 p.txt {font-size: 15px; color: #db4141; margin-top: 4px;}
+.bkComplete-sec .d-row-1 p:first-child {margin-top: 0;}
+.bkComplete-sec .d-row-1 p.dot > .rArrow {}
+.bkComplete-sec .d-row-1 p.dot > .rArrow:after {position: absolute; left: 0; border-color: #333; border-width: 2px; top: 11px; width: 4px; height: 4px;}

@@ -1,5 +1,5 @@
 $(function() {
 
-    fixedPop(".bkCancle", ".pop-kbCancle", ".pop-kbCancle .a-x");
+    fixedPop(".a-btn.bkCancle", ".pop-bkCancle", ".pop-bkCancle .a-x");
 
 });

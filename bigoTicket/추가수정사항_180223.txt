@@ -1,0 +1,7 @@
+﻿1. 소스파일 내용 추가 및 수정 파일
+common.css
+common.js
+static/css/booking/init.css
+(기존 거에 덮혀씌우기)
+
+2. 이미지 소스 최종걸로 덮혀씌우기

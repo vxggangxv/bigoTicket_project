@@ -13,13 +13,13 @@ input,select,option,textarea {font-family: 'Nanum Gothic', 'Malgun Gothic', 'Dot
 .bx-wrapper .bx-controls-direction a {background: none;}
 
 /* 초기화 */
-select, input[type=text].reset {
+select.reset, input[type=text].reset {
 	-webkit-appearance: none; -moz-appearance: none; appearance: none; border: none; outline: none;
 }
-select::-ms-expand {
+select.reset::-ms-expand {
     display: none;
 }
-select {width: 70px; height: 32px; border: 1px solid #b6b6b6; background: #fff url(/img/common/selectArr.png) no-repeat 85% center; padding-left: 10px; padding-bottom: 5px; box-sizing: border-box;}
+select.reset {width: 70px; height: 32px; border: 1px solid #b6b6b6; background: #fff url(/img/common/selectArr.png) no-repeat 85% center; padding-left: 10px; padding-bottom: 5px; box-sizing: border-box;}
 select.reset-2 {width: 96px; height: 40px; border: 1px solid #919191; background: #fff url(/img/common/sltDnArr.jpg) no-repeat 58px -1px; padding-left: 10px; padding-bottom: 5px; box-sizing: border-box; color: #777; font-size: 17px;}
 
 /* 테마컬러 */
@@ -106,7 +106,7 @@ select.reset-2 {width: 96px; height: 40px; border: 1px solid #919191; background
 	box-sizing: border-box; background: #fff;
 	display: none;
 }
-.wrap-pop .div[class*=-pop].fixed {position: fixed;}
+.wrap-pop .div[class^=pop-] {position: relative;}
 .pop-seatChk .borTop {height: 3px; width: 100%;
 	/* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#a22e9a+0,2367c2+50,00a28f+100 */
 background: #a22e9a; /* Old browsers */

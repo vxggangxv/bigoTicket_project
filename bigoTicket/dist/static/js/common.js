@@ -40,3 +40,15 @@ function fixedPop(op, itm, cls) {
     });
 
 }
+
+// 레이어 팝업 비노출
+function hidePop(itm) {
+    $(itm).hide();
+    $(itm).closest("#wrap-pop").css("z-index", "-1");
+}
+
+// 레이어 팝업 노출
+function showPop(itm) {
+    $(itm).show();
+    $(itm).closest("#wrap-pop").css("z-index", "100");
+}
