@@ -19,20 +19,72 @@
                 <ul class="cf">
                     <li><a href="/views/">홈</a></li>
                     <li><span class="ic-rArrow rArrow"></span></li>
-                    <li class="on"><a href="/views/onBooking/">구매자정보 입력</a></li>
+                    <li class="on"><a href="/views/check/index_02.html">예매확인/취소</a></li>
                 </ul>
             </nav>
-            <section class="bookerInfo-sec bkTbCms container cm-s">
+            <section class="lookup-sec-2 bkTbCms container cm-s">
 
-                <h2 class="ls-1">온라인 쇼핑몰 구매자 예약</h2>
-                <p class="p-1 ls-1">
-                    쿠팡/티몬/ 지마켓 등 외부 온라인 쇼핑몰 구매완료 고객
-                </p>
+                <h2 class="ls-1">예매 조회/취소</h2>
+                <p class="p-1 ls-1">홈페이지에서 구매한 예약 및 취소된 목록을 보여드립니다.</p>
 
-                <h3>예약자 정보 입력</h3>
+                <h3>예약내역</h3>
+                <table class="tbCms">
+                    <colgroup>
+                        <col class="nth-1">
+                        <col class="nth-2">
+                        <col class="nth-3">
+                        <col class="nth-4">
+                        <col class="nth-5">
+                        <col class="nth-6">
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>예약상태</th>
+                            <th>관람일자</th>
+                            <th>관람구역</th>
+                            <th>관람인원</th>
+                            <th>좌석상태</th>
+                            <th>구매처</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr onclick="location.href='/views/check/index_03.html'">
+                            <td><span class="normal state">정상</span></td>
+                            <td>2018년 3월 8일 목요일</td>
+                            <td>B구역(S석)</td>
+                            <td>6명</td>
+                            <td>확정</td>
+                            <td>홈페이지</td>
+                        </tr>
+                        <tr onclick="location.href='/views/check/index_03.html'">
+                            <td><span class="cancle state">예약취소</span></td>
+                            <td>2018년 3월 9일 금요일</td>
+                            <td>B구역(S석)</td>
+                            <td>6명</td>
+                            <td>확정</td>
+                            <td>홈페이지</td>
+                        </tr>
+                        <tr onclick="location.href='/views/check/index_03.html'" class="useComplete">
+                            <td><span class="use state">사용완료</span></td>
+                            <td>2018년 3월 1일 목요일</td>
+                            <td>A구역(S석)</td>
+                            <td>2명</td>
+                            <td>확정</td>
+                            <td>홈페이지</td>
+                        </tr>
+                        <!-- 예매내역 없을경우 -->
+                        <!-- <tr>
+                            <td colspan="6" class="none">
+                                <p>예약 내역이 없습니다.</p>
+                                <a href="" class="a-btn btn-2">예매하기 <span class="ic-rArrow rArrow"></span></a>
+                            </td>
+                        </tr> -->
+                    </tbody>
+                </table>
 
+                <!-- 예매내역 없을경우 버튼 비노출-->
                 <div class="btnArea">
-                    <a href="/views/onBooking/index_01_02.html" class="a-btn wd-2 a-2">구매내역 인증 <span class="ic-rArrow rArrow"></span></a>
+                    <a href="/views/booking/" class="a-btn wd-2 a-2">티켓예매 홈</a>
                 </div>
 
 			</section>

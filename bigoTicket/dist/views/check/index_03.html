@@ -76,54 +76,58 @@
                     </li>
                     <li><span class="ic-rArrow rArrow"></span>
                     </li>
-                    <li class="on"><a href="/views/onBooking/">구매자정보 입력</a>
+                    <li class="on"><a href="/views/check/index_02.html">예매확인/취소</a>
                     </li>
                 </ul>
             </nav>
-            <section class="bookerInfo-sec bkTbCms container cm-s">
+            <section class="lookup-sec-3 bkTbCms container cm-s">
 
-                <h2 class="ls-1">온라인 쇼핑몰 구매자 예약</h2>
-                <p class="p-1 ls-1">
-                    쿠팡/티몬/ 지마켓 등 외부 온라인 쇼핑몰 구매완료 고객
-                </p>
+                <h2 class="ls-1">예매 조회/취소</h2>
+                <p class="p-1 ls-1">홈페이지에서 구매한 예약 및 취소된 목록을 보여드립니다.</p>
 
-                <h3>예약자 정보 입력</h3>
-                <table class="bkInputTb tbCms">
-                    <col class="nth-1">
-                        <col class="nth-2">
-                            <tbody>
-                                <tr>
-                                    <th>휴대폰번호</th>
-                                    <td>
-                                        <select name="" id="" class="slt slt-01">
-                                            <option value="">010</option>
-                                            <option value="">0707</option>
-                                        </select>
-                                        <span>-</span>
-                                        <input type="text" class="inp inp-02">
-                                        <span>-</span>
-                                        <input type="text" class="inp inp-02">
-
-                                        <span class="s-ps">※ 온라인 쇼핑몰 구매시 등록한 휴대폰 번호</span>
-                                    </td>
-                                </tr>
-                                <tr>
-                                    <th>예약자명</th>
-                                    <td>
-                                        <input type="text" class="inp inp-01">
-                                        <span class="s-ps">※ 구매 후 휴대폰으로 받으신 빅오쇼 예약 인증번호</span>
-                                    </td>
-                                </tr>
-                            </tbody>
+                <h3>예약내역 및 결제 정보</h3>
+                <table class="bkInfoTb tbCms">
+                    <colgroup>
+                        <col class="nth-1">
+                            <col class="nth-2">
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <th>예약상태</th>
+                            <td>정상</td>
+                        </tr>
+                        <tr>
+                            <th>구매처</th>
+                            <td>홈페이지</td>
+                        </tr>
+                        <tr>
+                            <th>관람일자/구역</th>
+                            <td>2018년 3월 8일 목요일 <span class="s-l">ㅣ</span> A구역 (S좌석)</td>
+                        </tr>
+                        <tr>
+                            <th>좌석번호</th>
+                            <td>4열 17, 4열 18, 4열 19, 4열 20, 4열 21, 4열 22 <a href="#" class="a-btn seat">선택 좌석 보기</a>
+                            </td>
+                        </tr>
+                        <tr>
+                            <th>인원</th>
+                            <td>총 6명 (성인 2명, 중고생,경로2명, 어린이 1명)</td>
+                        </tr>
+                        <tr>
+                            <th>상품금액</th>
+                            <td>성인 2명 36,000원 <span class="s-l">ㅣ</span> 중고생,경로 3명 24,000원 <span class="s-l">ㅣ</span> 어린이 1명 14,000원</td>
+                        </tr>
+                        <tr>
+                            <th>총 결제금액</th>
+                            <td><span class="s-prc">86,000<span>원</span></span>
+                            </td>
+                        </tr>
+                    </tbody>
                 </table>
-                <p class="p-ps">
-                    * 구매후 휴대폰으로 전송된 예약인증번호를 입력하세요. (구매처의 주문번호가 아닙니다.)
-                    <br>* 인증번호는 쇼핑몰에서 구매하신 시간에 따라 전일 오후 3시 ~오전 9시 구매시 오전 12시 발송/ 오전 9시 ~ 오후 3시 구매자 : 당일 오후 6시 발송
-                    <br>* 바코드 미수신 및 문의전화 02-2202-3435/6 / 운영시간 09시~18시 (점심시간 12~1시 제외)
-                </p>
 
                 <div class="btnArea">
-                    <a href="/views/onBooking/index_01_02.html" class="a-btn wd-2 a-2">구매내역 인증 <span class="ic-rArrow rArrow"></span></a>
+                    <a href="/views/booking/" class="a-btn a-2 mr-1">홈</a>
+                    <a href="/views/check/index_04.html" class="a-btn">예약/결제 취소</a>
                 </div>
 
             </section>
@@ -156,6 +160,1752 @@
             </div>
         </footer>
 
+
+        <div id="wrap-pop" class="wrap-pop">
+            <div class="backDropBg"></div>
+
+            <section class="pop-seatChk fixed">
+                <div class="borTop"></div>
+
+                <header class="header-pop">
+                    <h1>선택 좌석 확인<span class="a-i-x a-x"></span></h1>
+                </header>
+                <div class="main-pop cf">
+                    <div class="sltArea cf">
+                        <div class="d-seat">
+                            <h2>선택좌석</h2>
+                            <table class="d-seatTb">
+                                <colgroup>
+                                    <col class="nth-1">
+                                        <col class="nth-2">
+                                </colgroup>
+                                <tbody>
+                                    <tr>
+                                        <th>구역 및 좌석</th>
+                                        <td><span class="s-green"></span>A구역 (S석)</td>
+                                    </tr>
+                                    <tr>
+                                        <th>좌석번호</th>
+                                        <td>
+                                            4열 17, 4열 18, 4열 19,
+                                            <br>4열 20, 4열 21, 4열 22
+                                        </td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        <div class="d-area">
+                            <h2>선택구역</h2>
+                            <!-- 구역별 클래스 추가 area-a ~area-h -->
+                            <div class="d-areaView area-a"></div>
+                        </div>
+                    </div>
+
+                    <div class="sltAreaView">
+                        <div class="seatLayout type-a">
+
+                            <!-- A구역 예시, 레이어팝업은 seaArea 아이디 제거(클릭 기능 제거) -->
+                            <div class="seatArea">
+                                <!-- 스노우좀: snow, 선택가능 좌석: possible, 선택한 좌석: on, 예약블가능: impossible 클래스 -->
+                                <ul class="seatList cf">
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>1
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>2
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>3
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>4
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>5
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>6
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>7
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>8
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>9
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>10
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>11
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>12
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>13
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>14
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>15
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>16
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>17
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>18
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>19
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>20
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>21
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>22
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        7열
+                                        <br>23
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>24
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>25
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>26
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>27
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>28
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>29
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>30
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>31
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>32
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>33
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>34
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>35
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>36
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        7열
+                                        <br>37
+                                    </li>
+
+
+                                </ul>
+                                <ul class="seatList cf">
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>1
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>2
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>3
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>4
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>5
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>6
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>7
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>8
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>9
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>10
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>11
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>12
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>13
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>14
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>15
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>16
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>17
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>18
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>19
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>20
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>21
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        6열
+                                        <br>22
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        6열
+                                        <br>23
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>24
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>25
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>26
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>27
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>28
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>29
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>30
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>31
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>32
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>33
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>34
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>35
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>36
+                                    </li>
+
+
+
+                                    <li class="possible f-sm">
+                                        6열
+                                        <br>37
+                                    </li>
+
+
+                                </ul>
+                                <ul class="seatList cf">
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>1
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>2
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>3
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>4
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>5
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>6
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>7
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>8
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>9
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>10
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>11
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>12
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>13
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>14
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>15
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>16
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>17
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>18
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>19
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>20
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>21
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>22
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>23
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>24
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>25
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>26
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>27
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>28
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>29
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>30
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>31
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>32
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>33
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>34
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>35
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>36
+                                    </li>
+
+                                    <li class="possible f-sm">
+                                        5열
+                                        <br>37
+                                    </li>
+
+                                </ul>
+                                <ul class="seatList cf">
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>1
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>2
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>3
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>4
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>5
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>6
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>7
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>8
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>9
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>10
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>11
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>12
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>13
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>14
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>15
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>16
+                                    </li>
+
+
+
+                                    <li class="snow on">
+                                        4열
+                                        <br>17
+                                    </li>
+
+
+
+                                    <li class="snow on">
+                                        4열
+                                        <br>18
+                                    </li>
+
+
+
+                                    <li class="snow on">
+                                        4열
+                                        <br>19
+                                    </li>
+
+
+
+                                    <li class="snow on">
+                                        4열
+                                        <br>20
+                                    </li>
+
+
+
+                                    <li class="snow on">
+                                        4열
+                                        <br>21
+                                    </li>
+
+
+
+                                    <li class="snow on">
+                                        4열
+                                        <br>22
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>23
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>24
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>25
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>26
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>27
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>28
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>29
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>30
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>31
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>32
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>33
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>34
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>35
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>36
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        4열
+                                        <br>37
+                                    </li>
+
+
+                                </ul>
+                                <ul class="seatList cf">
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>1
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>2
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>3
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>4
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>5
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>6
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>7
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>8
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>9
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>10
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>11
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>12
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>13
+                                    </li>
+
+
+
+                                    <li class="impossible f-sm">
+                                        3열
+                                        <br>14
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>15
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>16
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>17
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>18
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>19
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>20
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>21
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>22
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>23
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>24
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>25
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>26
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>27
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>28
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>29
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>30
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>31
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>32
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>33
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>34
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>35
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>36
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        3열
+                                        <br>37
+                                    </li>
+
+
+                                </ul>
+                                <ul class="seatList cf">
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>1
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>2
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>3
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>4
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>5
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>6
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>7
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>8
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>9
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>10
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>11
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>12
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>13
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>14
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>15
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>16
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>17
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>18
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>19
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>20
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>21
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>22
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>23
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>24
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>25
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>26
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>27
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>28
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>29
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>30
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>31
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>32
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>33
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>34
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>35
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>36
+                                    </li>
+
+                                    <li class="snow f-sm">
+                                        2열
+                                        <br>37
+                                    </li>
+
+                                </ul>
+                                <ul class="seatList cf">
+
+
+                                    <li class="non">
+                                        1열
+                                        <br>1
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        1열
+                                        <br>2
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        1열
+                                        <br>3
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        1열
+                                        <br>4
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        1열
+                                        <br>5
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        1열
+                                        <br>6
+                                    </li>
+
+
+
+                                    <li class="non">
+                                        1열
+                                        <br>7
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>8
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>9
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>10
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>11
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>12
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>13
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>14
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>15
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>16
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>17
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>18
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>19
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>20
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>21
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>22
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>23
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>24
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>25
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>26
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>27
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>28
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>29
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>30
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>31
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>32
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>33
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>34
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>35
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>36
+                                    </li>
+
+
+
+                                    <li class="snow f-sm">
+                                        1열
+                                        <br>37
+                                    </li>
+
+
+                                </ul>
+                            </div>
+
+                            <div class="stage">무대</div>
+                        </div>
+                    </div>
+                    <div class="category">
+                        <span class="s-on"></span> 선택한 좌석
+                    </div>
+
+                </div>
+            </section>
+
+        </div>
     </div>
 
 </body>

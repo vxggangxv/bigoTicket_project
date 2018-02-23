@@ -32,6 +32,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 .schedule-sec .calTb thead {border: 1px solid #dfdfdf; border-top: 2px solid #616e7b; background: #eef0f6;}
 .schedule-sec .calTb thead th {text-align: center; padding: 6px 0; font-size: 14px; font-weight: 700;}
 .schedule-sec .calTb tbody td {border: 1px solid #dfdfdf; padding: 8px 10px; height: 106px; box-sizing: border-box;}
+.schedule-sec .calTb tbody td > a {display: block; width: 100%; height: 100%;}
 .schedule-sec .calTb tbody td.sat {background: #fbfdfe;}
 .schedule-sec .calTb tbody td.sun {background: #fef8f7;}
 .schedule-sec .calTb tbody td.on {background: #ffffd9;}

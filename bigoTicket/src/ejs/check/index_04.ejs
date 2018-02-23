@@ -19,20 +19,35 @@
                 <ul class="cf">
                     <li><a href="/views/">홈</a></li>
                     <li><span class="ic-rArrow rArrow"></span></li>
-                    <li class="on"><a href="/views/onBooking/">구매자정보 입력</a></li>
+                    <li class="on"><a href="/views/check/index_02.html">예매확인/취소</a></li>
                 </ul>
             </nav>
-            <section class="bookerInfo-sec bkTbCms container cm-s">
+            <section class="cancleGuide-sec container">
 
-                <h2 class="ls-1">온라인 쇼핑몰 구매자 예약</h2>
-                <p class="p-1 ls-1">
-                    쿠팡/티몬/ 지마켓 등 외부 온라인 쇼핑몰 구매완료 고객
-                </p>
+                <h2 class="ls-1">빅오쇼 홈페이지 구매자 <span class="cl-blue">예매 취소</span> 안내</h2>
 
-                <h3>예약자 정보 입력</h3>
+                <div class="d-row-1">
+                    <p class="dot">
+                        <span class="ic-rArrow rArrow"></span>
+                        예매 및 결제 취소는 관람 예정일 1일 전까지만 가능합니다.
+                    </p>
+                    <p class="dot">
+                        <span class="ic-rArrow rArrow"></span>
+                        부분 취소는 불가하며, 전체내역 취소 후 다시 예매하셔야 합니다.
+                    </p>
+                    <p class="dot">
+                        <span class="ic-rArrow rArrow"></span>
+                        예매 취소가 완료되면 카드사에 따라 7일정도 후 카드취 소 및 환불됩니다. (자세한 내용은 해당 카드사 문의)
+                    </p>
+                    <p class="dot">
+                        <span class="ic-rArrow rArrow"></span>
+                        관람 예정일 당일에는 예매 취소가 불가합니다.
+                    </p>
+                </div>
 
                 <div class="btnArea">
-                    <a href="/views/onBooking/index_01_02.html" class="a-btn wd-2 a-2">구매내역 인증 <span class="ic-rArrow rArrow"></span></a>
+                    <a href="/views/" class="a-btn mr-1">이전화면</a>
+                    <a href="/views/check/index_04.html" class="a-btn a-2 bkCancle">예약/결제 취소</a>
                 </div>
 
 			</section>
@@ -40,6 +55,25 @@
 		</div>
 
         <% include ../parts/_footer.ejs %>
+
+        <div id="wrap-pop" class="wrap-pop">
+            <div class="backDropBg"></div>
+
+            <section class="pop-kbCancle fixed">
+                <div class="borTop"></div>
+
+                <header class="header-pop">
+                    <h1>예매취소<span class="a-i-x a-x"></span></h1>
+                </header>
+                <div class="main-pop cf">
+                    예매를 취소하시겠습니까?
+                    <div class="btnArea">
+                        <a href="/views/" class="a-btn mr-1">이전화면</a>
+                        <a href="/views/check/index_04.html" class="a-btn a-2 bkCancle">예약/결제 취소</a>
+                    </div>
+                </div>
+            </section>
+        </div>
     </div>
 
 </body>
