@@ -165,8 +165,10 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#fefefe', end
 .bookerInfo-sec h3 .agree-01{margin-left: 20px;}
 .bookerInfo-sec .txtArea {}
 .bookerInfo-sec .txtArea .inTxt {width: 1075px; height: 80px; overflow: auto; margin: 14px auto; border: 1px solid #d7d7d7; font-size: 12px; padding: 5px 15px; box-sizing: border-box; word-break: keep-all; font-family: "Dutom", sans-serif;}
-.bookerInfo-sec .txtArea .inTxt .p-1 {font-size: 14px; font-weight: 700; color: #232323;}
-.bookerInfo-sec .txtArea .inTxt .p-2 {font-size: 13px; color: #666; font-weight: 700; margin-top: 8px;}
+.bookerInfo-sec .txtArea .inTxt .p-1:first-child {margin-top: 0;}
+.bookerInfo-sec .txtArea .inTxt > p {font-weight: 700; margin-top: 8px;}
+.bookerInfo-sec .txtArea .inTxt .p-1 {font-size: 14px; color: #232323;}
+.bookerInfo-sec .txtArea .inTxt .p-2 {font-size: 13px; color: #666;}
 
 /* 예약완료 */
 .bkComplete-sec {}

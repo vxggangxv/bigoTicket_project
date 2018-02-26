@@ -1,7 +1,10 @@
-﻿1. 소스파일 내용 추가 및 수정 파일
+﻿1. 이용약관 추가
+booking/index_04.html
+
+2. 소스파일 내용 추가 및 수정 파일
 common.css
 common.js
 static/css/booking/init.css
 (기존 거에 덮혀씌우기)
 
-2. 이미지 소스 최종걸로 덮혀씌우기
+3. 이미지 소스 최종걸로 덮혀씌우기
